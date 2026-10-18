@@ -24,7 +24,7 @@
 ### 👨‍💻 About Me
 
 - 🎓 **Academic**: Pursuing **B.Sc. CSIT** (Computer Science and Information Technology) at **Prime College**, Tribhuvan University (*Class of '27*).
-- 🚀 **Leadership**: **PR Director** at **Prime IT Club**, organizing campus tech workshops, bootcamps, and hackathons.
+- 🚀 **Leadership**: **PR Advisor** at **Prime IT Club**, advising on tech events, student outreach, workshops, and hackathons.
 - 💡 **Interests**: Applied Artificial Intelligence, Large Language Models (LLM integrations), Computer Vision, Python backends, and full-stack web applications.
 - 🛠️ **Current Focus**: Engineering student-centric academic tools, AI assistants, and automated systems for university students.
 
