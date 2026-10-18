@@ -31,7 +31,7 @@
 
 <p><b>Software Developer · CS Student · Python & Applied AI Enthusiast</b></p>
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-samyog--portfolio.vercel.app-0d1117?style=for-the-badge&logo=vercel&logoColor=white)](https://samyog-portfolio.vercel.app)
+[![Portfolio](https://img.shields.io/badge/Portfolio-samyog--sapkota.com.np-0d1117?style=for-the-badge&logo=googlechrome&logoColor=white)](https://samyog-sapkota.com.np)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-samyogsapkota-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/samyogsapkota/)
 [![Email](https://img.shields.io/badge/Email-samyog.sapkota1%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:samyog.sapkota1@gmail.com)
 [![GitHub](https://img.shields.io/badge/GitHub-hola--mundo999-22d3ee?style=for-the-badge&logo=github&logoColor=black)](https://github.com/hola-mundo999)
