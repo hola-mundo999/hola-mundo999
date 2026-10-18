@@ -51,14 +51,6 @@ STAGGER = ROW_DUR
 im = Image.open(SRC).convert("L")
 im = ImageEnhance.Brightness(im).enhance(BRIGHTNESS)
 im = ImageEnhance.Contrast(im).enhance(CONTRAST)
-
-# Crop square around head & shoulders before resizing
-w, h = im.size
-crop_top = int(h * 0.05)
-crop_size = min(w, int(h * 0.85))
-crop_left = (w - crop_size) // 2
-im = im.crop((crop_left, crop_top, crop_left + crop_size, crop_top + crop_size))
-
 im = im.resize((COLS, ROWS), Image.Resampling.LANCZOS)
 px = im.load()
 
