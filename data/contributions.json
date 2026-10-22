@@ -1,22 +1,22 @@
 {
   "username": "hola-mundo999",
-  "generated_at": "2026-10-21T11:47:21Z",
+  "generated_at": "2026-10-22T11:50:14Z",
   "range": {
     "start": "2025-10-19",
+    "end": "2026-10-22"
+  },
+  "total_contributions": 124,
+  "active_days": 9,
+  "avg_per_active_day": 13.8,
+  "current_streak": {
+    "length": 6,
+    "start": "2026-10-16",
     "end": "2026-10-21"
   },
-  "total_contributions": 123,
-  "active_days": 8,
-  "avg_per_active_day": 15.4,
-  "current_streak": {
-    "length": 5,
-    "start": "2026-10-16",
-    "end": "2026-10-20"
-  },
   "longest_streak": {
-    "length": 5,
+    "length": 6,
     "start": "2026-10-16",
-    "end": "2026-10-20"
+    "end": "2026-10-21"
   },
   "best_day": {
     "date": "2026-10-18",
@@ -73,7 +73,7 @@
     },
     {
       "month": "2026-10",
-      "total": 122
+      "total": 123
     }
   ],
   "days": [
@@ -1914,6 +1914,11 @@
     },
     {
       "date": "2026-10-21",
+      "count": 1,
+      "level": 1
+    },
+    {
+      "date": "2026-10-22",
       "count": 0,
       "level": 0
     }
