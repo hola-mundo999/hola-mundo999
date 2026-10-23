@@ -1,0 +1,91 @@
+{
+  "_comment": [
+    "Optional human metadata for the live-deployments board.",
+    "Keys match either the Vercel project name or the repo name.",
+    "Entries with \"pinned\": true are shown even when no VERCEL_TOKEN is set,",
+    "which is how non-auto-discovered (or private-repo) builds stay listed.",
+    "Only live_url is ever rendered. Repo names are used for matching, never printed."
+  ],
+  "projects": {
+    "fashion-store": {
+      "title": "Noir Atelier",
+      "description": "Considered menswear storefront with collections, cart and a server-side catalogue, shipped on Next.js App Router.",
+      "tags": ["Next.js 16", "TypeScript", "Tailwind v4"],
+      "live_url": "https://fashion-store-one-beta.vercel.app",
+      "platform": "vercel",
+      "pinned": true,
+      "order": 0,
+      "accent": "amber"
+    },
+    "samyog-portfolio": {
+      "title": "3D Developer Portfolio",
+      "description": "Personal portfolio with 3D graphics, fluid motion and a project showcase, running on the Vercel edge.",
+      "tags": ["React 19", "Three.js", "Tailwind v4"],
+      "live_url": "https://samyog-sapkota.com.np",
+      "platform": "vercel",
+      "pinned": true,
+      "order": 1,
+      "accent": "cyan"
+    },
+    "note-app": {
+      "title": "NoteNest",
+      "description": "Markdown notebook with instant local persistence, keyboard-first navigation and a distraction-free editor.",
+      "tags": ["React", "Markdown", "LocalStorage"],
+      "live_url": "https://note-app-nu-two.vercel.app",
+      "platform": "vercel",
+      "pinned": true,
+      "order": 2,
+      "accent": "emerald"
+    },
+    "github-user-finder": {
+      "title": "GitHub Finder",
+      "description": "Search any GitHub handle and get a clean profile card with repos, followers and language breakdown.",
+      "tags": ["GitHub API", "JavaScript", "Async"],
+      "live_url": "https://github-user-finder-jade-alpha.vercel.app",
+      "platform": "vercel",
+      "pinned": true,
+      "order": 3,
+      "accent": "indigo"
+    },
+    "result-card-generator": {
+      "title": "Result Announced",
+      "description": "Turns TU board marks into a printable, shareable result card with grades, GPA and percentage.",
+      "tags": ["JavaScript", "Canvas", "TU Board"],
+      "live_url": "https://result-card-generator-red.vercel.app",
+      "platform": "vercel",
+      "pinned": true,
+      "order": 4,
+      "accent": "amber"
+    },
+    "random-color-palette": {
+      "title": "Paletto",
+      "description": "Generates harmonious colour palettes, locks the swatches you like and copies hex codes in one tap.",
+      "tags": ["JavaScript", "Color", "CSS"],
+      "live_url": "https://random-color-palette-snowy.vercel.app",
+      "platform": "vercel",
+      "pinned": true,
+      "order": 5,
+      "accent": "pink"
+    },
+    "password-generator": {
+      "title": "PassForge",
+      "description": "Cryptographically random password builder with entropy scoring, length presets and copy-to-clipboard.",
+      "tags": ["Web Crypto", "Security", "JavaScript"],
+      "live_url": "https://password-generator-delta-liard.vercel.app",
+      "platform": "vercel",
+      "pinned": true,
+      "order": 6,
+      "accent": "sky"
+    },
+    "country-info-app": {
+      "title": "Country Explorer",
+      "description": "Search any country for capital, population, currency, languages and region data from a live REST API.",
+      "tags": ["REST API", "Fetch", "CSS Grid"],
+      "live_url": "https://country-info-explorer-phi.vercel.app",
+      "platform": "vercel",
+      "pinned": true,
+      "order": 7,
+      "accent": "violet"
+    }
+  }
+}
