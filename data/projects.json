@@ -1,19 +1,19 @@
 {
-  "generated_at": "2026-10-23T13:24:24Z",
+  "generated_at": "2026-10-23T15:55:45Z",
   "source": "pinned",
   "count": 8,
   "projects": [
     {
-      "name": "Noir Atelier",
-      "slug": "noir-atelier",
-      "description": "Considered menswear storefront with collections, cart and a server-side catalogue, shipped on Next.js App Router.",
+      "name": "AUVYREN",
+      "slug": "auvyren",
+      "description": "Virtual storefront with a 3D garment rail, cart and an everyday edit, shipped as a fast static build.",
       "tags": [
-        "Next.js 16",
-        "TypeScript",
-        "Tailwind v4"
+        "JavaScript",
+        "3D",
+        "Static"
       ],
-      "live_url": "https://fashion-store-one-beta.vercel.app",
-      "host": "fashion-store-one-beta.vercel.app",
+      "live_url": "https://auvyren-virtual-store-sable.vercel.app",
+      "host": "auvyren-virtual-store-sable.vercel.app",
       "platform": "vercel",
       "framework": "",
       "deployed_at": null,
