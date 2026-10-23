@@ -1,11 +1,20 @@
 name: Update profile art
 
-# Refreshes the contribution graph + stats card SVGs daily from real data.
-# Runs daily, plus whenever you push to main, plus on-demand.
+# Refreshes the contribution graph, stats card and the live-deployments board
+# from real data. Runs every 6 hours so a new Vercel production deploy shows up
+# on the profile quickly, plus on every push to main, plus on demand.
+#
+# Live deployments need one repository secret:
+#   VERCEL_TOKEN    Vercel -> Account Settings -> Tokens (read scope is enough)
+# Optional:
+#   VERCEL_TEAM_ID  if the projects belong to a team
+#
+# Without VERCEL_TOKEN the board falls back to the pinned entries in
+# data/project_meta.json, so nothing breaks.
 
 "on":
   schedule:
-    - cron: "17 6 * * *"   # ~06:17 UTC every day
+    - cron: "17 */6 * * *"   # 00:17, 06:17, 12:17, 18:17 UTC
   workflow_dispatch: {}
   push:
     branches: [main]
@@ -13,8 +22,12 @@ name: Update profile art
 permissions:
   contents: write
 
+concurrency:
+  group: profile-art
+  cancel-in-progress: false
+
 jobs:
-  heatmap:
+  refresh:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -37,8 +50,17 @@ jobs:
       - name: Render streak and stats card SVG
         run: python scripts/render_stats_svg.py
 
+      - name: Fetch live deployments from Vercel
+        run: python scripts/fetch_projects.py
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+          VERCEL_TEAM_ID: ${{ secrets.VERCEL_TEAM_ID }}
+
+      - name: Render animated deployment cards + refresh README block
+        run: python scripts/render_projects_svg.py
+
       - name: Commit updated art
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "chore: refresh contribution graph [skip ci]"
-          file_pattern: "data/contributions.json contrib-heatmap.svg stats.svg"
+          commit_message: "chore: refresh profile art [skip ci]"
+          file_pattern: "data/contributions.json data/projects.json contrib-heatmap.svg stats.svg assets/projects/*.svg assets/deploy-ticker.svg README.md"

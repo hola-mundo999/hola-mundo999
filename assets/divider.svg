@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 30" width="100%" height="auto" role="img" aria-label="Section divider">
+  <title>Section divider</title>
+  <defs>
+    <linearGradient id="dline" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6366f1" stop-opacity="0" />
+      <stop offset="18%" stop-color="#6366f1" stop-opacity="0.55" />
+      <stop offset="50%" stop-color="#22d3ee" stop-opacity="0.85" />
+      <stop offset="82%" stop-color="#34d399" stop-opacity="0.55" />
+      <stop offset="100%" stop-color="#34d399" stop-opacity="0" />
+    </linearGradient>
+    <linearGradient id="dlineSoft" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0" />
+      <stop offset="20%" stop-color="#1e293b" stop-opacity="0.9" />
+      <stop offset="80%" stop-color="#1e293b" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#1e293b" stop-opacity="0" />
+    </linearGradient>
+    <radialGradient id="cometGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#67e8f9" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#67e8f9" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <style>
+    @keyframes flow {
+      to { stroke-dashoffset: -220; }
+    }
+    @keyframes glimmer {
+      0%, 100% { opacity: 0.35; }
+      50%      { opacity: 0.85; }
+    }
+    @keyframes drift {
+      0%   { opacity: 0; }
+      15%  { opacity: 1; }
+      85%  { opacity: 1; }
+      100% { opacity: 0; }
+    }
+    .flow { animation: flow 6s linear infinite; }
+    .gem { animation: glimmer 4.5s ease-in-out infinite; }
+    @media (prefers-reduced-motion: reduce) {
+      .flow, .gem, .comet { animation: none !important; }
+    }
+  </style>
+
+  <line x1="0" y1="15" x2="880" y2="15" stroke="url(#dlineSoft)" stroke-width="1" />
+  <line class="flow" x1="40" y1="15" x2="840" y2="15" stroke="url(#dline)" stroke-width="1.4" stroke-dasharray="6 18" />
+
+  <g class="comet">
+    <circle cx="440" cy="15" r="12" fill="url(#cometGlow)">
+      <animate attributeName="cx" values="60;820;60" dur="14s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0;0.7;0.9;0.7;0" keyTimes="0;0.1;0.5;0.9;1" dur="14s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="440" cy="15" r="2.2" fill="#a5f3fc">
+      <animate attributeName="cx" values="60;820;60" dur="14s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0;1;1;1;0" keyTimes="0;0.08;0.5;0.92;1" dur="14s" repeatCount="indefinite" />
+    </circle>
+  </g>
+
+  <g class="gem" fill="#22d3ee">
+    <path d="M 440 9 L 446 15 L 440 21 L 434 15 Z" />
+    <path d="M 40 15 L 44 12 L 48 15 L 44 18 Z" fill="#818cf8" opacity="0.9" />
+    <path d="M 832 15 L 836 12 L 840 15 L 836 18 Z" fill="#34d399" opacity="0.9" />
+  </g>
+</svg>

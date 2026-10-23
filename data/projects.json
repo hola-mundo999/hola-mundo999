@@ -1,0 +1,143 @@
+{
+  "generated_at": "2026-10-23T13:22:42Z",
+  "source": "pinned",
+  "count": 8,
+  "projects": [
+    {
+      "name": "Noir Atelier",
+      "slug": "noir-atelier",
+      "description": "Considered menswear storefront with collections, cart and a server-side catalogue, shipped on Next.js App Router.",
+      "tags": [
+        "Next.js 16",
+        "TypeScript",
+        "Tailwind v4"
+      ],
+      "live_url": "https://fashion-store-one-beta.vercel.app",
+      "host": "fashion-store-one-beta.vercel.app",
+      "platform": "vercel",
+      "framework": "",
+      "deployed_at": null,
+      "pinned": true,
+      "accent": "amber"
+    },
+    {
+      "name": "3D Developer Portfolio",
+      "slug": "3d-developer-portfolio",
+      "description": "Personal portfolio with 3D graphics, fluid motion and a project showcase, running on the Vercel edge.",
+      "tags": [
+        "React 19",
+        "Three.js",
+        "Tailwind v4"
+      ],
+      "live_url": "https://samyog-sapkota.com.np",
+      "host": "samyog-sapkota.com.np",
+      "platform": "vercel",
+      "framework": "",
+      "deployed_at": null,
+      "pinned": true,
+      "accent": "cyan"
+    },
+    {
+      "name": "NoteNest",
+      "slug": "notenest",
+      "description": "Markdown notebook with instant local persistence, keyboard-first navigation and a distraction-free editor.",
+      "tags": [
+        "React",
+        "Markdown",
+        "LocalStorage"
+      ],
+      "live_url": "https://note-app-nu-two.vercel.app",
+      "host": "note-app-nu-two.vercel.app",
+      "platform": "vercel",
+      "framework": "",
+      "deployed_at": null,
+      "pinned": true,
+      "accent": "emerald"
+    },
+    {
+      "name": "GitHub Finder",
+      "slug": "github-finder",
+      "description": "Search any GitHub handle and get a clean profile card with repos, followers and language breakdown.",
+      "tags": [
+        "GitHub API",
+        "JavaScript",
+        "Async"
+      ],
+      "live_url": "https://github-user-finder-jade-alpha.vercel.app",
+      "host": "github-user-finder-jade-alpha.vercel.app",
+      "platform": "vercel",
+      "framework": "",
+      "deployed_at": null,
+      "pinned": true,
+      "accent": "indigo"
+    },
+    {
+      "name": "Result Announced",
+      "slug": "result-announced",
+      "description": "Turns TU board marks into a printable, shareable result card with grades, GPA and percentage.",
+      "tags": [
+        "JavaScript",
+        "Canvas",
+        "TU Board"
+      ],
+      "live_url": "https://result-card-generator-red.vercel.app",
+      "host": "result-card-generator-red.vercel.app",
+      "platform": "vercel",
+      "framework": "",
+      "deployed_at": null,
+      "pinned": true,
+      "accent": "amber"
+    },
+    {
+      "name": "Paletto",
+      "slug": "paletto",
+      "description": "Generates harmonious colour palettes, locks the swatches you like and copies hex codes in one tap.",
+      "tags": [
+        "JavaScript",
+        "Color",
+        "CSS"
+      ],
+      "live_url": "https://random-color-palette-snowy.vercel.app",
+      "host": "random-color-palette-snowy.vercel.app",
+      "platform": "vercel",
+      "framework": "",
+      "deployed_at": null,
+      "pinned": true,
+      "accent": "pink"
+    },
+    {
+      "name": "PassForge",
+      "slug": "passforge",
+      "description": "Cryptographically random password builder with entropy scoring, length presets and copy-to-clipboard.",
+      "tags": [
+        "Web Crypto",
+        "Security",
+        "JavaScript"
+      ],
+      "live_url": "https://password-generator-delta-liard.vercel.app",
+      "host": "password-generator-delta-liard.vercel.app",
+      "platform": "vercel",
+      "framework": "",
+      "deployed_at": null,
+      "pinned": true,
+      "accent": "sky"
+    },
+    {
+      "name": "Country Explorer",
+      "slug": "country-explorer",
+      "description": "Search any country for capital, population, currency, languages and region data from a live REST API.",
+      "tags": [
+        "REST API",
+        "Fetch",
+        "CSS Grid"
+      ],
+      "live_url": "https://country-info-explorer-phi.vercel.app",
+      "host": "country-info-explorer-phi.vercel.app",
+      "platform": "vercel",
+      "framework": "",
+      "deployed_at": null,
+      "pinned": true,
+      "accent": "violet"
+    }
+  ]
+}
