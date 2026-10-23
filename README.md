@@ -42,7 +42,7 @@ Production builds, newest first. Every card opens the deployed site — the sour
 <table>
   <tr>
     <td align="center" width="50%">
-      <a href="https://fashion-store-one-beta.vercel.app"><img src="./assets/projects/noir-atelier.svg" width="440" alt="Noir Atelier — live at fashion-store-one-beta.vercel.app" /></a>
+      <a href="https://auvyren-virtual-store-sable.vercel.app"><img src="./assets/projects/auvyren.svg" width="440" alt="AUVYREN — live at auvyren-virtual-store-sable.vercel.app" /></a>
     </td>
     <td align="center" width="50%">
       <a href="https://samyog-sapkota.com.np"><img src="./assets/projects/3d-developer-portfolio.svg" width="440" alt="3D Developer Portfolio — live at samyog-sapkota.com.np" /></a>

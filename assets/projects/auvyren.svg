@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="178" viewBox="0 0 440 178" role="img" aria-labelledby="t7346784 d7346784">
+<title id="t7346784">AUVYREN — live at auvyren-virtual-store-sable.vercel.app</title>
+<desc id="d7346784">Virtual storefront with a 3D garment rail, cart and an everyday edit, shipped as a fast static build.</desc>
+<defs>
+  <linearGradient id="bg7346784" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#0b1220"/><stop offset="0.55" stop-color="#080d17"/><stop offset="1" stop-color="#05080f"/>
+  </linearGradient>
+  <linearGradient id="edge7346784" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#fbbf24" stop-opacity="0.55"/>
+    <stop offset="0.45" stop-color="#243044" stop-opacity="0.9"/>
+    <stop offset="1" stop-color="#b45309" stop-opacity="0.35"/>
+  </linearGradient>
+  <radialGradient id="aura7346784" cx="0.5" cy="0.5" r="0.5">
+    <stop offset="0" stop-color="#fbbf24" stop-opacity="0.20"/>
+    <stop offset="0.65" stop-color="#fbbf24" stop-opacity="0.05"/>
+    <stop offset="1" stop-color="#fbbf24" stop-opacity="0"/>
+  </radialGradient>
+  <linearGradient id="bar7346784" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#b45309" stop-opacity="0.15"/>
+    <stop offset="0.35" stop-color="#fbbf24" stop-opacity="0.85"/>
+    <stop offset="0.7" stop-color="#fbbf24" stop-opacity="0.35"/>
+    <stop offset="1" stop-color="#fbbf24" stop-opacity="0.08"/>
+  </linearGradient>
+  <linearGradient id="sheen7346784" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#ffffff" stop-opacity="0"/>
+    <stop offset="0.5" stop-color="#ffffff" stop-opacity="0.09"/>
+    <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+  </linearGradient>
+  <linearGradient id="icon7346784" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#fbbf24" stop-opacity="0.30"/>
+    <stop offset="1" stop-color="#b45309" stop-opacity="0.18"/>
+  </linearGradient>
+  <pattern id="grid7346784" width="22" height="22" patternUnits="userSpaceOnUse">
+    <path d="M22 0H0V22" fill="none" stroke="#243044" stroke-width="0.6" stroke-opacity="0.5"/>
+  </pattern>
+  <clipPath id="clip7346784"><rect width="440" height="178" rx="15"/></clipPath>
+</defs>
+<style>
+  @keyframes rise{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+  @keyframes sweep{0%{transform:translateX(0)}42%,100%{transform:translateX(760px)}}
+  @keyframes breathe{0%,100%{transform:translate(0,0) scale(1)}50%{transform:translate(-14px,10px) scale(1.14)}}
+  @keyframes pulse{0%,100%{opacity:1}50%{opacity:0.25}}
+  @keyframes beam{0%{transform:translateX(-90px)}100%{transform:translateX(450px)}}
+  @keyframes blink{0%,49%{opacity:1}50%,100%{opacity:0}}
+  @keyframes nudge{0%,100%{transform:translateX(0)}50%{transform:translateX(3px)}}
+  .card{animation:rise 0.7s cubic-bezier(0.16,1,0.3,1) backwards}
+  .sheen{animation:sweep 8s cubic-bezier(0.4,0,0.2,1) 1.0s infinite}
+  .aura{animation:breathe 15s ease-in-out 0.3s infinite}
+  .dot{animation:pulse 2.4s ease-in-out 1.3s infinite}
+  .beam{animation:beam 5.5s linear 2.1s infinite}
+  .caret{animation:blink 1.1s steps(1,end) infinite}
+  .link{animation:nudge 3s ease-in-out infinite}
+  @media (prefers-reduced-motion: reduce){.card,.sheen,.aura,.dot,.beam,.caret,.link{animation:none!important}}
+</style>
+<g class="card">
+  <rect width="440" height="178" rx="15" fill="url(#bg7346784)"/>
+  <g clip-path="url(#clip7346784)">
+    <rect width="440" height="178" fill="url(#grid7346784)" opacity="0.34"/>
+    <circle class="aura" cx="398" cy="12" r="120" fill="url(#aura7346784)" style="transform-box:fill-box;transform-origin:center"/>
+    <g transform="skewX(-18)"><rect class="sheen" x="-190" y="-60" width="160" height="320" fill="url(#sheen7346784)"/></g>
+    <rect class="beam" x="0" y="174" width="80" height="4" fill="#ffffff" opacity="0.55"/>
+    <rect x="0" y="174" width="440" height="4" fill="url(#bar7346784)"/>
+  </g>
+  <rect x="0.6" y="0.6" width="438.8" height="176.8" rx="14.4" fill="none" stroke="url(#edge7346784)" stroke-width="1.2"/>
+  <path d="M16 1.2H424" stroke="#ffffff" stroke-opacity="0.07"/>
+
+  <rect x="20" y="18" width="36" height="36" rx="10" fill="url(#icon7346784)" stroke="#fbbf24" stroke-opacity="0.45" stroke-width="1"/>
+  <text x="38" y="41" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="800" fill="#ffffff" letter-spacing="0.6">AU</text>
+
+  <text x="66" y="34" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="17" font-weight="700" fill="#f8fafc" letter-spacing="-0.2">AUVYREN</text>
+  <text x="66" y="51" font-family="ui-monospace,SFMono-Regular,'Cascadia Code',Menlo,Consolas,monospace" font-size="9.5" fill="#64748b" letter-spacing="0.9">VERCEL</text>
+
+  <g transform="translate(364,18)">
+    <rect width="56" height="20" rx="10" fill="#052e22" fill-opacity="0.9" stroke="#10b981" stroke-opacity="0.4" stroke-width="0.9"/>
+    <circle cx="11" cy="10" r="2.6" fill="#34d399" class="dot"/>
+    <circle cx="11" cy="10" r="2.6" fill="none" stroke="#34d399" stroke-width="1">
+      <animate attributeName="r" values="2.6;9" dur="2.4s" begin="1.3s" repeatCount="indefinite"/>
+      <animate attributeName="stroke-opacity" values="0.6;0" dur="2.4s" begin="1.3s" repeatCount="indefinite"/>
+    </circle>
+    <text x="19" y="13.4" font-family="ui-monospace,SFMono-Regular,'Cascadia Code',Menlo,Consolas,monospace" font-size="8.5" font-weight="700" fill="#6ee7b7" letter-spacing="0.9">LIVE</text>
+  </g>
+
+  <text x="20" y="81" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="11.5" fill="#9db0c8">Virtual storefront with a 3D garment rail, cart and an</text><text x="20" y="98" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif" font-size="11.5" fill="#9db0c8">everyday edit, shipped as a fast static build.</text>
+  <g transform="translate(20.0,112)"><rect width="75.5" height="20" rx="5" fill="#fbbf24" fill-opacity="0.12" stroke="#fbbf24" stroke-opacity="0.5" stroke-width="0.8"/><text x="37.8" y="13.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,'Cascadia Code',Menlo,Consolas,monospace" font-size="9.5" font-weight="600" fill="#fbbf24">JavaScript</text></g><g transform="translate(102.5,112)"><rect width="29.5" height="20" rx="5" fill="#0f172a" fill-opacity="0.75" stroke="#233043" stroke-opacity="0.9" stroke-width="0.8"/><text x="14.8" y="13.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,'Cascadia Code',Menlo,Consolas,monospace" font-size="9.5" font-weight="600" fill="#94a3b8">3D</text></g><g transform="translate(139.0,112)"><rect width="52.5" height="20" rx="5" fill="#0f172a" fill-opacity="0.75" stroke="#233043" stroke-opacity="0.9" stroke-width="0.8"/><text x="26.2" y="13.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,'Cascadia Code',Menlo,Consolas,monospace" font-size="9.5" font-weight="600" fill="#94a3b8">Static</text></g>
+
+  <line x1="20" y1="142" x2="420" y2="142" stroke="#1e293b" stroke-width="1"/>
+  <line x1="20" y1="142" x2="150" y2="142" stroke="#fbbf24" stroke-opacity="0.55" stroke-width="1"/>
+
+  <circle cx="23" cy="157" r="2" fill="#fbbf24" opacity="0.8"/>
+  <text x="30" y="160" font-family="ui-monospace,SFMono-Regular,'Cascadia Code',Menlo,Consolas,monospace" font-size="9" fill="#64748b" letter-spacing="0.6">live on vercel</text>
+  <g class="link">
+    <text x="420" y="160" text-anchor="end" font-family="ui-monospace,SFMono-Regular,'Cascadia Code',Menlo,Consolas,monospace" font-size="9.5" fill="#fbbf24" letter-spacing="0.2">auvyren-virtual-store-sable.vercel…</text>
+  </g>
+</g>
+</svg>

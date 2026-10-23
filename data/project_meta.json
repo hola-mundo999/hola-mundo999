@@ -7,11 +7,11 @@
     "Only live_url is ever rendered. Repo names are used for matching, never printed."
   ],
   "projects": {
-    "fashion-store": {
-      "title": "Noir Atelier",
-      "description": "Considered menswear storefront with collections, cart and a server-side catalogue, shipped on Next.js App Router.",
-      "tags": ["Next.js 16", "TypeScript", "Tailwind v4"],
-      "live_url": "https://fashion-store-one-beta.vercel.app",
+    "auvyren-virtual-store": {
+      "title": "AUVYREN",
+      "description": "Virtual storefront with a 3D garment rail, cart and an everyday edit, shipped as a fast static build.",
+      "tags": ["JavaScript", "3D", "Static"],
+      "live_url": "https://auvyren-virtual-store-sable.vercel.app",
       "platform": "vercel",
       "pinned": true,
       "order": 0,
