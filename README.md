@@ -95,8 +95,11 @@ Production builds, newest first. Every card opens the deployed site — the sour
     <tr>
       <td>
         <b><a href="https://github.com/hola-mundo999/ai-csit-study-assistant">⚡ TU CSIT Pulse</a></b><br>
+        <a href="https://ai-csit-study-assistant.vercel.app">
+          <img src="https://img.shields.io/badge/Live_App-Vercel-000000?style=flat-square&logo=vercel&logoColor=white" alt="Live Vercel App" />
+        </a>
         <a href="https://ai-csit-study-assistant.streamlit.app">
-          <img src="https://img.shields.io/badge/Live_App-Streamlit_Cloud-FF4B4B?style=flat-square&logo=streamlit&logoColor=white" alt="Live App" />
+          <img src="https://img.shields.io/badge/Streamlit_App-FF4B4B?style=flat-square&logo=streamlit&logoColor=white" alt="Streamlit App" />
         </a>
       </td>
       <td>Smart Academic Learning Platform &amp; Multi-Model AI Tutor (Groq, Gemini, ChatGPT) for TU BSc CSIT students with verified semester notes and solved past board exams.</td>
@@ -105,18 +108,18 @@ Production builds, newest first. Every card opens the deployed site — the sour
     <tr>
       <td>
         <b><a href="https://github.com/hola-mundo999/ai-gesture-controller-">🖐️ AI Gesture Controller</a></b><br>
-        <a href="https://github.com/hola-mundo999/ai-gesture-controller-">
-          <img src="https://img.shields.io/badge/Code-Repository-10b981?style=flat-square&logo=github&logoColor=white" alt="Repo" />
+        <a href="https://ai-gesture-controller-murex.vercel.app">
+          <img src="https://img.shields.io/badge/Live_App-Vercel-000000?style=flat-square&logo=vercel&logoColor=white" alt="Live App" />
         </a>
       </td>
-      <td>Real-time Computer Vision desktop interface using hand landmark tracking for touchless slide navigation and media control.</td>
+      <td>On-device hand tracking drives playback, volume, mute, track selection, and an on-screen pointer; camera frames stay in the browser.</td>
       <td><code>Python</code> <code>OpenCV</code> <code>MediaPipe</code></td>
     </tr>
     <tr>
       <td>
         <b><a href="https://github.com/hola-mundo999/prime-event-ticket-manager">🎟️ Prime Event Ticket Manager</a></b><br>
-        <a href="https://github.com/hola-mundo999/prime-event-ticket-manager">
-          <img src="https://img.shields.io/badge/Code-Repository-6366f1?style=flat-square&logo=github&logoColor=white" alt="Repo" />
+        <a href="https://prime-event-ticket-manager.vercel.app">
+          <img src="https://img.shields.io/badge/Live_App-Vercel-000000?style=flat-square&logo=vercel&logoColor=white" alt="Live App" />
         </a>
       </td>
       <td>Cryptographic QR registration and verification system engineered for Prime IT Club hackathons, workshops, and campus events.</td>
@@ -125,8 +128,8 @@ Production builds, newest first. Every card opens the deployed site — the sour
     <tr>
       <td>
         <b><a href="https://github.com/hola-mundo999/tu-csit-notice-hub">📢 TU CSIT Notice Hub</a></b><br>
-        <a href="https://github.com/hola-mundo999/tu-csit-notice-hub">
-          <img src="https://img.shields.io/badge/Code-Repository-38bdf8?style=flat-square&logo=github&logoColor=white" alt="Repo" />
+        <a href="https://tu-csit-notice-hub.vercel.app">
+          <img src="https://img.shields.io/badge/Live_Dashboard-Vercel-000000?style=flat-square&logo=vercel&logoColor=white" alt="Live Dashboard" />
         </a>
       </td>
       <td>Automated web scraping and alert pipeline monitoring official Tribhuvan University (IOST) notices, exam routines, and results.</td>
