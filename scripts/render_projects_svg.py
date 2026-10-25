@@ -199,7 +199,7 @@ def render_card(p, gen_ts):
         )
 
     svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" aria-labelledby="t{h} d{h}">
-<title id="t{h}">{esc(name)} — live at {esc(host)}</title>
+<title id="t{h}">{esc(name)}: live at {esc(host)}</title>
 <desc id="d{h}">{esc(desc)}</desc>
 <defs>
   <linearGradient id="bg{h}" x1="0" y1="0" x2="1" y2="1">
@@ -391,7 +391,7 @@ def render_readme_block(projects):
     cells = []
     for p in projects:
         slug = p.get("slug") or "project"
-        alt = f"{p.get('name')} — live at {p.get('host')}"
+        alt = f"{p.get('name')}: live at {p.get('host')}"
         cells.append(
             '    <td align="center" width="50%">\n'
             f'      <a href="{esc(p.get("live_url"))}">'
