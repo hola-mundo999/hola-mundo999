@@ -1,20 +1,8 @@
-name: Update profile art
-
-# Refreshes the contribution graph, stats card and the live-deployments board
-# from real data. Runs every 6 hours so a new Vercel production deploy shows up
-# on the profile quickly, plus on every push to main, plus on demand.
-#
-# Live deployments need one repository secret:
-#   VERCEL_TOKEN    Vercel -> Account Settings -> Tokens (read scope is enough)
-# Optional:
-#   VERCEL_TEAM_ID  if the projects belong to a team
-#
-# Without VERCEL_TOKEN the board falls back to the pinned entries in
-# data/project_meta.json, so nothing breaks.
+name: Refresh GitHub activity visuals
 
 on:
   schedule:
-    - cron: "17 */6 * * *"   # 00:17, 06:17, 12:17, 18:17 UTC
+    - cron: "17 */6 * * *"
   workflow_dispatch: {}
   push:
     branches: [main]
@@ -29,6 +17,7 @@ concurrency:
 jobs:
   refresh:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
 
@@ -36,31 +25,22 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Install dependencies
+      - name: Install contribution-render dependencies
         run: pip install -r scripts/requirements.txt
 
-      - name: Scrape real contribution data (no auth needed)
+      - name: Fetch public contribution history
         run: python scripts/fetch_contributions.py
         env:
           GH_PROFILE_USER: "hola-mundo999"
 
-      - name: Render animated contribution heatmap SVG
+      - name: Render contribution heatmap
         run: python scripts/render_heatmap_svg.py
 
-      - name: Render streak and stats card SVG
+      - name: Render contribution statistics and streak
         run: python scripts/render_stats_svg.py
 
-      - name: Fetch live deployments from Vercel
-        run: python scripts/fetch_projects.py
-        env:
-          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
-          VERCEL_TEAM_ID: ${{ secrets.VERCEL_TEAM_ID }}
-
-      - name: Render animated deployment cards + refresh README block
-        run: python scripts/render_projects_svg.py
-
-      - name: Commit updated art
+      - name: Commit only changed activity assets
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "chore: refresh profile art [skip ci]"
-          file_pattern: "data/contributions.json data/projects.json contrib-heatmap.svg stats.svg assets/projects/*.svg assets/deploy-ticker.svg README.md"
+          commit_message: "chore: refresh GitHub activity visuals [skip ci]"
+          file_pattern: "data/contributions.json contrib-heatmap.svg stats.svg"
