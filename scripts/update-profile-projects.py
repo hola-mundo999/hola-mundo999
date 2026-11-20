@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Refresh the profile README's public-repository list from GitHub's public API."""
+"""Refresh the profile README with the user's latest public repositories."""
 from __future__ import annotations
 
 import html
@@ -12,6 +12,13 @@ README = "README.md"
 START = "<!-- PROJECTS:START -->"
 END = "<!-- PROJECTS:END -->"
 API = f"https://api.github.com/users/{USERNAME}/repos?type=owner&sort=updated&per_page=100"
+FEATURED_REPOS = {
+    "auvyren-virtual-store",
+    "ai-csit-study-assistant",
+    "ai-gesture-controller-",
+    "prime-event-ticket-manager",
+}
+
 
 def fetch_repositories():
     repos = []
@@ -32,12 +39,18 @@ def fetch_repositories():
         url = match.group(1) if match else None
     return repos
 
-def clean(value: str) -> str:
-    return html.escape((value or "").replace("\n", " ").strip(), quote=True)
+
+def clean(value: str, limit: int = 140) -> str:
+    value = (value or "").replace("\r", " ").replace("\n", " ").strip()
+    if len(value) > limit:
+        value = value[: limit - 1].rstrip() + "…"
+    return html.escape(value, quote=True)
+
 
 def main():
     with open(README, encoding="utf-8") as file:
         readme = file.read()
+
     if START not in readme or END not in readme:
         raise SystemExit("README project markers are missing; refusing to overwrite content.")
 
@@ -45,43 +58,54 @@ def main():
         repo for repo in fetch_repositories()
         if repo.get("owner", {}).get("login", "").lower() == USERNAME
         and repo.get("name", "").lower() != USERNAME
+        and repo.get("name", "").lower() not in FEATURED_REPOS
         and not repo.get("fork")
         and not repo.get("archived")
         and not repo.get("disabled")
     ]
-    repos.sort(key=lambda repo: (repo.get("stargazers_count", 0), repo.get("updated_at", "")), reverse=True)
-    repos = repos[:15]
+    repos.sort(
+        key=lambda repo: (repo.get("updated_at", ""), repo.get("name", "").lower()),
+        reverse=True,
+    )
+    repos = repos[:30]
 
     if not repos:
-        section = "_No public repositories found yet._"
+        section = "_No additional public repositories to show yet._"
     else:
         rows = []
         for repo in repos:
-            name = clean(repo.get("name", "Repository"))
-            url = repo.get("html_url", "")
-            description = clean(repo.get("description") or "A public project by Samyog.")
-            language = clean(repo.get("language") or "Multiple technologies")
+            name = clean(repo.get("name", "Repository"), 80)
+            description = clean(repo.get("description") or "Personal project by Samyog.")
+            language = clean(repo.get("language") or "Various")
             stars = int(repo.get("stargazers_count") or 0)
+            url = repo.get("html_url", "")
+            if not url.startswith(f"https://github.com/{USERNAME}/"):
+                continue
             rows.append(
-                f'<tr><td><a href="{url}"><strong>{name}</strong></a><br>'
-                f'<sub>{description}</sub></td>'
-                f'<td>{language}</td><td>★ {stars}</td></tr>'
+                f'<tr><td><a href="{url}"><strong>{name}</strong></a></td>'
+                f'<td>{description}</td><td>{language}</td><td>★ {stars}</td></tr>'
             )
-        section = (
-            '<table>\n<tr><th>Repository</th><th>Primary language</th><th>Stars</th></tr>\n'
-            + "\n".join(rows)
-            + "\n</table>"
-        )
+
+        if rows:
+            section = (
+                "<table>\n"
+                "<thead><tr><th>Repository</th><th>About</th><th>Language</th><th>Stars</th></tr></thead>\n"
+                "<tbody>\n" + "\n".join(rows) + "\n</tbody>\n</table>"
+            )
+        else:
+            section = "_No additional public repositories to show yet._"
 
     before, rest = readme.split(START, 1)
     _, after = rest.split(END, 1)
     updated = before + START + "\n" + section + "\n" + END + after
+
     if updated != readme:
         with open(README, "w", encoding="utf-8", newline="\n") as file:
             file.write(updated)
-        print(f"Updated profile with {len(repos)} public repositories.")
+        print(f"Updated profile with {len(repos)} additional public repositories.")
     else:
         print(f"Profile repository list is already current ({len(repos)} repositories).")
+
 
 if __name__ == "__main__":
     main()

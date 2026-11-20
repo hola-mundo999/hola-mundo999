@@ -24,6 +24,10 @@ jobs:
     steps:
       - name: Check out profile repository
         uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
       - name: Generate contribution snake SVG and GIF
         uses: Platane/snk@651a2bcd85e37cf42a9f4921aca57af42f731728
         with:
@@ -33,8 +37,31 @@ jobs:
             github-contribution-snake-dark.svg?palette=github-dark
             github-contribution-snake.gif?color_snake=%2338bdf8&color_dots=%230b1b2b,%23153e67,%231d65a6,%2338bdf8,%23a5f3fc
 
-      - name: Commit generated snake images
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          commit_message: "chore: refresh contribution snake [skip ci]"
-          file_pattern: "github-contribution-snake.svg github-contribution-snake-dark.svg github-contribution-snake.gif"
+      - name: Commit and push generated images safely
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "hola-mundo999"
+          git config user.email "296933633+hola-mundo999@users.noreply.github.com"
+          git add github-contribution-snake.svg github-contribution-snake-dark.svg github-contribution-snake.gif
+
+          if git diff --cached --quiet; then
+            echo "Snake images are already current."
+            exit 0
+          fi
+
+          git commit -m "chore: refresh contribution snake [skip ci]"
+
+          for attempt in 1 2 3; do
+            git fetch origin +refs/heads/main:refs/remotes/origin/main
+            git rebase origin/main
+            if git push origin HEAD:main; then
+              echo "Snake images pushed successfully."
+              exit 0
+            fi
+            echo "Push raced with another profile update; retrying ($attempt/3)."
+            sleep $((attempt * 2))
+          done
+
+          echo "Could not push generated snake images after three attempts."
+          exit 1
