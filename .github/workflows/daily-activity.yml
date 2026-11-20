@@ -48,7 +48,6 @@ jobs:
           if schedule in scheduled_slots:
               slot = scheduled_slots[schedule]
           else:
-              # Manual runs are assigned to the current UTC six-hour window.
               slot = f"{(now.hour // 6) * 6:02d}"
 
           path = "data/daily-activity.json"
@@ -70,7 +69,6 @@ jobs:
           data["last_successful_utc_slot"] = slot
           data["purpose"] = "Four transparent scheduled profile-maintenance heartbeats per UTC day"
 
-          # Retain only the most recent 14 days of slot history.
           for old_date in sorted(completed)[:-14]:
               del completed[old_date]
 

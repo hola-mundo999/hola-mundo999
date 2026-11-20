@@ -1,7 +1,5 @@
 <div align="center">
 
-<img src="./assets/showcase/hero-ai-cyborg.webp" width="100%" alt="Cinematic cyborg artwork from my developer portfolio">
-
 <h1>Samyog Sapkota</h1>
 
 **Software Developer · Applied AI · Computer Vision · 3D Web**
@@ -121,21 +119,17 @@ Monitors official IOST notices, identifies routines and results, and organises u
 <a href="https://github.com/"><img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Github-Dark.svg" width="46" height="46" alt="GitHub"></a>
 </div>
 
-## GitHub in 3D
-
-The following is generated from my actual GitHub contribution history. It is an isometric 3D contribution calendar, not a manually drawn banner.
+## 3D contribution calendar
 
 <div align="center">
 <img src="./profile-3d-contrib/profile-night-view.svg" width="100%" alt="Isometric 3D GitHub contribution calendar">
-<img src="./profile-3d-contrib/profile-gitblock.svg" width="100%" alt="3D GitHub contribution git blocks">
+<img src="./profile-3d-contrib/profile-gitblock.svg" width="100%" alt="Isometric GitHub contribution blocks">
 </div>
 
-## Contribution activity
+## Contribution streak & snake
 
 <div align="center">
 <img src="https://streak-stats.demolab.com?user=hola-mundo999&theme=transparent&hide_border=true&ring=38BDF8&fire=60A5FA&currStreakLabel=93C5FD&sideLabels=9DB7D7&dates=7189A8&background=00000000" width="100%" alt="GitHub contribution streak">
-
-<img src="./contrib-heatmap.svg" width="100%" alt="GitHub contribution heatmap">
 
 <img src="./github-contribution-snake.gif" width="100%" alt="Animated GitHub contribution snake">
 </div>
