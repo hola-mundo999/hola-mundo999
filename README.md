@@ -1,114 +1,150 @@
 <div align="center">
 
-<img src="./assets/samyog-hero.svg" alt="Samyog Sapkota — Software Developer and Applied AI" width="100%">
+<h1>Samyog Sapkota</h1>
+
+**Software Developer · Applied AI · Computer Vision · Interactive 3D**
+
+Kathmandu, Nepal · BSc CSIT, Prime College
+
+<a href="https://samyog-sapkota.com.np">Portfolio</a> &nbsp;·&nbsp;
+<a href="https://www.linkedin.com/in/samyogsapkota/">LinkedIn</a> &nbsp;·&nbsp;
+<a href="mailto:samyog.sapkota1@gmail.com">Email</a>
 
 <br>
 
-<a href="https://samyog-sapkota.com.np"><img src="https://img.shields.io/badge/PORTFOLIO-0B1B33?style=for-the-badge&logo=vercel&logoColor=8CCAFF" alt="Portfolio"></a>
-<a href="https://www.linkedin.com/in/samyogsapkota"><img src="https://img.shields.io/badge/LINKEDIN-0B1B33?style=for-the-badge&logo=linkedin&logoColor=8CCAFF" alt="LinkedIn"></a>
-<a href="mailto:samyog.sapkota1@gmail.com"><img src="https://img.shields.io/badge/EMAIL-0B1B33?style=for-the-badge&logo=gmail&logoColor=8CCAFF" alt="Email"></a>
+<a href="https://samyog-sapkota.com.np/snake-preview.html"><strong>↗ LAUNCH THE INTERACTIVE THREE.JS SNAKE LAB</strong></a>
 
-**I build practical software at the intersection of web development, automation and applied AI.**
+<sub>The 3D scene opens as a real WebGL experience on my portfolio site; GitHub README embeds cannot run an interactive Three.js canvas.</sub>
 
 </div>
 
 ---
 
-## 01 / About
+## About
 
-I'm a BSc CSIT student at **Prime College, Kathmandu**, interested in turning ideas into useful, working products. My work ranges from browser-based computer vision and AI-assisted study tools to full-stack applications, automation and interactive 3D experiences.
+I’m a BSc CSIT student at Prime College who learns by building real software. I work across browser-based computer vision, AI-assisted learning tools, automation, backend systems and interactive web experiences.
 
-I learn by building: understanding a problem, shipping a working version, testing the details and improving it.
+I care about more than getting a demo to work: I like understanding the problem, shaping a clear interface, testing edge cases and making the result useful.
 
-- **Currently exploring:** applied AI, computer vision, full-stack engineering and 3D web experiences.
-- **Approach:** practical problem-solving, clear interfaces and systems that do what they promise.
-- **Beyond code:** Public Relations Director at Prime IT Club, connecting students, clubs and industry.
+- **Building with:** Python, JavaScript, React, FastAPI and browser technologies.
+- **Exploring:** applied AI, computer vision, Three.js and practical full-stack systems.
+- **Community:** Public Relations Director at Prime IT Club, connecting students, clubs and industry.
 
-## 02 / Selected work
+## Selected work
+
+These are screenshots of the real applications, captured from my portfolio—not decorative mock cards.
 
 <table>
 <tr>
 <td width="50%" valign="top">
-<a href="https://auvyren-virtual-store-sable.vercel.app"><img src="./assets/project-auvyren.svg" width="100%" alt="Auvyren virtual store artwork"></a>
-**[AUVYREN — 3D Virtual Store](https://auvyren-virtual-store-sable.vercel.app)**
+<a href="https://auvyren-virtual-store-sable.vercel.app"><img src="./assets/showcase/auvyren-store.webp" width="100%" alt="AUVYREN virtual store application screenshot"></a>
 
-A virtual storefront with a 3D garment rail, product discovery and shopping flow.
+### AUVYREN · 3D Virtual Store
 
-<sub>JavaScript · 3D assets · E-commerce UI</sub>
+A virtual fashion storefront with a 3D garment rail, product discovery and a shopping flow.
+
+**JavaScript · 3D assets · E-commerce**
+
+<a href="https://auvyren-virtual-store-sable.vercel.app">Live experience ↗</a> · <a href="https://github.com/hola-mundo999/auvyren-virtual-store">Source ↗</a>
 </td>
 <td width="50%" valign="top">
-<a href="https://github.com/hola-mundo999/ai-csit-study-assistant"><img src="./assets/project-csit-pulse.svg" width="100%" alt="CSIT Pulse artwork"></a>
-**[CSIT Pulse — AI Study Assistant](https://github.com/hola-mundo999/ai-csit-study-assistant)**
+<a href="https://ai-csit-study-assistant.vercel.app"><img src="./assets/showcase/csit-pulse.webp" width="100%" alt="CSIT Pulse study assistant screenshot"></a>
 
-A TU BSc CSIT study desk covering eight semesters, 66 subjects, 375 chapters, past questions and an AI tutor.
+### CSIT Pulse · AI Study Assistant
 
-<sub>JavaScript · Python · AI integration</sub>
+A TU BSc CSIT study desk with eight semesters, 66 subjects, 375 chapters, past questions and an AI tutor.
+
+**JavaScript · Python · AI integration**
+
+<a href="https://ai-csit-study-assistant.vercel.app">Live experience ↗</a> · <a href="https://github.com/hola-mundo999/ai-csit-study-assistant">Source ↗</a>
 </td>
 </tr>
 <tr>
 <td width="50%" valign="top">
-<a href="https://github.com/hola-mundo999/ai-gesture-controller-"><img src="./assets/project-gesture.svg" width="100%" alt="Gesture Controller artwork"></a>
-**[AI Gesture Controller](https://github.com/hola-mundo999/ai-gesture-controller-)**
+<a href="https://ai-gesture-controller-murex.vercel.app"><img src="./assets/showcase/gesture-controller.webp" width="100%" alt="AI Gesture Controller application screenshot"></a>
 
-Browser-based hand tracking that maps five gestures to media and pointer controls, with on-device inference.
+### AI Gesture Controller
 
-<sub>JavaScript · MediaPipe · Web Audio</sub>
+A browser-based hand-tracking controller for media and pointer actions. Landmark inference runs in the browser.
+
+**JavaScript · MediaPipe · Web Audio**
+
+<a href="https://ai-gesture-controller-murex.vercel.app">Live experience ↗</a> · <a href="https://github.com/hola-mundo999/ai-gesture-controller-">Source ↗</a>
 </td>
 <td width="50%" valign="top">
-<a href="https://github.com/hola-mundo999/prime-event-ticket-manager"><img src="./assets/project-ticket.svg" width="100%" alt="Ticket Manager artwork"></a>
-**[Prime Event Ticket Manager](https://github.com/hola-mundo999/prime-event-ticket-manager)**
+<a href="https://prime-event-ticket-manager.vercel.app"><img src="./assets/showcase/prime-ticket.webp" width="100%" alt="Prime Event Ticket Manager screenshot"></a>
 
-Event registration and QR check-in system built for Prime IT Club programmes, with a FastAPI backend and admin console.
+### Prime Event Ticket Manager
 
-<sub>Python · FastAPI · SQLite/PostgreSQL</sub>
+Event registration and QR check-in built for Prime IT Club programmes, backed by a FastAPI service and event-management tools.
+
+**Python · FastAPI · SQLite/PostgreSQL · QR**
+
+<a href="https://prime-event-ticket-manager.vercel.app">Live experience ↗</a> · <a href="https://github.com/hola-mundo999/prime-event-ticket-manager">Source ↗</a>
 </td>
 </tr>
-</table>
+<tr>
+<td width="50%" valign="top">
+<a href="https://github.com/hola-mundo999/tu-csit-notice-hub"><img src="./assets/showcase/notice-hub.webp" width="100%" alt="TU CSIT Notice Hub screenshot"></a>
 
-<details>
-<summary><strong>More experiments & small builds</strong></summary>
+### TU CSIT Notice Hub
 
-- [3D Developer Portfolio](https://samyog-sapkota.com.np) — interactive personal portfolio.
-- [TU CSIT Notice Hub](https://github.com/hola-mundo999/tu-csit-notice-hub) — academic notice scraping, categorisation and alerts.
+Monitors official IOST notices, identifies routines and results, and organises updates for CSIT students.
+
+**Python · BeautifulSoup · SQLite · Streamlit**
+
+<a href="https://github.com/hola-mundo999/tu-csit-notice-hub">Source ↗</a>
+</td>
+<td width="50%" valign="top">
+
+### More things I’ve built
+
+- [3D Developer Portfolio](https://samyog-sapkota.com.np) — interactive portfolio and experiments.
 - [NoteNest](https://note-app-nu-two.vercel.app) — local-first Markdown notebook.
 - [GitHub Finder](https://github-user-finder-jade-alpha.vercel.app) — GitHub profile lookup.
 - [Result Announced](https://result-card-generator-red.vercel.app) — printable TU result cards.
 - [Paletto](https://random-color-palette-snowy.vercel.app) — colour palette generator.
 - [PassForge](https://password-generator-delta-liard.vercel.app) — Web Crypto password generator.
 - [Country Explorer](https://country-info-explorer-phi.vercel.app) — country information explorer.
+</td>
+</tr>
+</table>
 
-</details>
-
-## 03 / Tools I work with
+## Tools I use
 
 <div align="center">
-<img src="https://skillicons.dev/icons?i=python,javascript,typescript,react,threejs,tailwind,fastapi,opencv,postgres,sqlite,supabase,html,css,git,github,vercel&perline=8" alt="Technology icons">
+<a href="https://www.python.org/"><img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Python-Dark.svg" width="46" height="46" alt="Python"></a>
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"><img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/JavaScript.svg" width="46" height="46" alt="JavaScript"></a>
+<a href="https://react.dev/"><img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/React-Dark.svg" width="46" height="46" alt="React"></a>
+<a href="https://threejs.org/"><img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/ThreeJS-Dark.svg" width="46" height="46" alt="Three.js"></a>
+<a href="https://tailwindcss.com/"><img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/TailwindCSS-Dark.svg" width="46" height="46" alt="Tailwind CSS"></a>
+<a href="https://fastapi.tiangolo.com/"><img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/FastAPI.svg" width="46" height="46" alt="FastAPI"></a>
+<a href="https://opencv.org/"><img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/OpenCV-Dark.svg" width="46" height="46" alt="OpenCV"></a>
+<a href="https://www.postgresql.org/"><img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/PostgreSQL-Dark.svg" width="46" height="46" alt="PostgreSQL"></a>
+<a href="https://supabase.com/"><img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Supabase-Dark.svg" width="46" height="46" alt="Supabase"></a>
+<a href="https://github.com/"><img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Github-Dark.svg" width="46" height="46" alt="GitHub"></a>
 </div>
 
-<sub>Tools used across my projects; this is not a claim of equal proficiency in every technology.</sub>
-
-## 04 / GitHub activity
+## GitHub activity
 
 <div align="center">
 
-<a href="https://github.com/hola-mundo999"><img src="https://streak-stats.demolab.com?user=hola-mundo999&theme=transparent&hide_border=true&ring=38BDF8&fire=60A5FA&currStreakLabel=93C5FD&sideLabels=9DB7D7&dates=7189A8&background=00000000" width="100%" alt="GitHub contribution streak"></a>
+<img src="./stats.svg" width="100%" alt="Contribution totals and streak statistics">
 
-<img src="./snake.svg" width="100%" alt="Animated contribution snake">
+<img src="./contrib-heatmap.svg" width="100%" alt="Contribution activity heatmap">
 
-<sub>Streak card and snake are generated from GitHub activity. GitHub's native contribution calendar below this README is the source of truth for the full contribution graph.</sub>
+<a href="https://github.com/hola-mundo999/hola-mundo999/actions/workflows/snake.yml">Contribution snake automation ↗</a>
 
 </div>
 
-## 05 / Connect
-
-I'm open to collaborating on practical software, AI-powered tools and interesting web projects.
+---
 
 <div align="center">
 
-<a href="https://samyog-sapkota.com.np"><strong>Portfolio</strong></a> ·
-<a href="https://www.linkedin.com/in/samyogsapkota"><strong>LinkedIn</strong></a> ·
-<a href="mailto:samyog.sapkota1@gmail.com"><strong>Email</strong></a>
+**Interested in building useful things with good people.**
 
-<sub>Built with curiosity · Kathmandu, Nepal</sub>
+<a href="https://samyog-sapkota.com.np">Portfolio</a> &nbsp;·&nbsp;
+<a href="https://www.linkedin.com/in/samyogsapkota/">LinkedIn</a> &nbsp;·&nbsp;
+<a href="mailto:samyog.sapkota1@gmail.com">Email</a>
 
 </div>
