@@ -99,7 +99,7 @@ let isAnimating = true
 
 async function loadData() {
   try {
-    const response = await fetch('/data/contributions.json')
+    const response = await fetch('./data/contributions.json')
     contributions = await response.json()
     buildTerrain()
     buildSnake()
