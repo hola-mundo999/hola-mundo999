@@ -18,6 +18,15 @@ FEATURED_REPOS = {
     "ai-gesture-controller-",
     "prime-event-ticket-manager",
 }
+DISPLAY_NAMES = {
+    "country-info-app": "Country Explorer",
+    "github-user-finder": "GitHub Finder",
+    "note-app": "NoteNest",
+    "password-generator": "PassForge",
+    "random-color-palette": "Paletto",
+    "result-card-generator": "Result Announced",
+    "tu-csit-notice-hub": "TU CSIT Notice Hub",
+}
 
 
 def fetch_repositories():
@@ -74,22 +83,33 @@ def main():
     else:
         rows = []
         for repo in repos:
-            name = clean(repo.get("name", "Repository"), 80)
-            description = clean(repo.get("description") or "Personal project by Samyog.")
+            slug = repo.get("name", "Repository").lower()
+            display_name = DISPLAY_NAMES.get(slug, repo.get("name", "Repository").replace("-", " ").title())
+            name = clean(display_name, 80)
+            description_text = repo.get("description") or "Personal project."
+            description_text = re.sub(
+                r"\s+by Samyog Sapkota\s*$", "", description_text.strip(), flags=re.IGNORECASE
+            )
+            description = clean(description_text)
             language = clean(repo.get("language") or "Various")
-            stars = int(repo.get("stargazers_count") or 0)
             url = repo.get("html_url", "")
+            homepage = (repo.get("homepage") or "").strip()
             if not url.startswith(f"https://github.com/{USERNAME}/"):
                 continue
+            live_link = (
+                f'<a href="{html.escape(homepage, quote=True)}">Live ↗</a>'
+                if homepage.startswith(("https://", "http://"))
+                else "—"
+            )
             rows.append(
                 f'<tr><td><a href="{url}"><strong>{name}</strong></a></td>'
-                f'<td>{description}</td><td>{language}</td><td>★ {stars}</td></tr>'
+                f'<td>{description}</td><td>{language}</td><td>{live_link}</td></tr>'
             )
 
         if rows:
             section = (
                 "<table>\n"
-                "<thead><tr><th>Repository</th><th>About</th><th>Language</th><th>Stars</th></tr></thead>\n"
+                "<thead><tr><th>Project</th><th>About</th><th>Language</th><th>Demo</th></tr></thead>\n"
                 "<tbody>\n" + "\n".join(rows) + "\n</tbody>\n</table>"
             )
         else:
