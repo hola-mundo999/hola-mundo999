@@ -1,17 +1,18 @@
 <div align="center">
 
-<img src="./assets/samyog-hero.svg" width="100%" alt="Samyog Sapkota - Software Developer &amp; Applied AI" />
+<img src="./assets/samyog-hero.svg" width="100%" alt="Samyog Sapkota - Software Developer & Applied AI" />
 
 <br>
 
 <p align="center">
-  Software developer · Applied AI and computer vision · BSc CSIT at Prime College
+  Software Developer · Applied AI & Computer Vision · BSc CSIT @ Prime College, Kathmandu
 </p>
 
 <p align="center">
   <a href="https://samyog-sapkota.com.np">Portfolio</a> ·
   <a href="https://www.linkedin.com/in/samyogsapkota/">LinkedIn</a> ·
-  <a href="mailto:samyog.sapkota1@gmail.com">Email</a>
+  <a href="mailto:samyog.sapkota1@gmail.com">Email</a> ·
+  <a href="https://github.com/hola-mundo999">GitHub</a>
 </p>
 
 </div>
@@ -20,13 +21,90 @@
 
 ### About
 
-I'm a BSc CSIT student at Prime College and a PR Advisor at Prime IT Club. I build academic tools, web applications, and computer vision projects. My current interests are applied AI and Python backends.
+I'm a BSc CSIT student at Prime College and Public Relations Director at Prime IT Club. I build academic tools, web applications, and computer vision projects. My current focus is applied AI, Python backends, and interactive systems.
 
 ---
 
-### Live deployments
+### Technologies I Build With
 
-Recent builds, newest first. Each card opens the live site.
+<img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/python.svg" alt="Python" width="40" height="40" style="margin: 4px;">
+<img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/javascript.svg" alt="JavaScript" width="40" height="40" style="margin: 4px;">
+<img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/typescript.svg" alt="TypeScript" width="40" height="40" style="margin: 4px;">
+<img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/react.svg" alt="React" width="40" height="40" style="margin: 4px;">
+<img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/threejs.svg" alt="Three.js" width="40" height="40" style="margin: 4px;">
+<img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/tailwindcss.svg" alt="Tailwind CSS" width="40" height="40" style="margin: 4px;">
+<img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/fastapi.svg" alt="FastAPI" width="40" height="40" style="margin: 4px;">
+<img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/opencv.svg" alt="OpenCV" width="40" height="40" style="margin: 4px;">
+<img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/mediapipe.svg" alt="MediaPipe" width="40" height="40" style="margin: 4px;">
+<img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/github.svg" alt="GitHub" width="40" height="40" style="margin: 4px;">
+<img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/vercel.svg" alt="Vercel" width="40" height="40" style="margin: 4px;">
+<img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/postgresql.svg" alt="PostgreSQL" width="40" height="40" style="margin: 4px;">
+
+---
+
+### Featured Projects
+
+<div align="center">
+
+<a href="https://github.com/hola-mundo999/ai-csit-study-assistant">
+  <img src="https://img.shields.io/badge/AI%20Study%20Assistant-black?style=for-the-badge&labelColor=1e1b4b&logo=github&logoColor=white" alt="TU CSIT Pulse AI Study Assistant">
+</a>
+<a href="https://ai-csit-study-assistant.vercel.app" target="_blank">
+  <img src="https://img.shields.io/badge/Live-black?style=for-the-badge&labelColor=0d1117&logo=vercel&logoColor=white" alt="Live Demo">
+</a>
+</div>
+
+**AI Study Assistant** — Semester notes and verified board exam solutions for TU BSc CSIT. Choose answers from Groq, Gemini, or ChatGPT.  
+`Python, FastAPI, LLM, Streamlit`
+
+<br>
+
+<div align="center">
+
+<a href="https://github.com/hola-mundo999/ai-gesture-controller-">
+  <img src="https://img.shields.io/badge/AI%20Gesture%20Controller-black?style=for-the-badge&labelColor=1e1b4b&logo=github&logoColor=white" alt="AI Gesture Controller">
+</a>
+<a href="https://ai-gesture-controller-murex.vercel.app" target="_blank">
+  <img src="https://img.shields.io/badge/Live-black?style=for-the-badge&labelColor=0d1117&logo=vercel&logoColor=white" alt="Live Demo">
+</a>
+</div>
+
+**AI Gesture Controller** — Browser-based hand tracking for media playback, volume, mute, track selection, and pointer controls. Camera frames stay in the browser.  
+`Python, MediaPipe, OpenCV, WebRTC`
+
+<br>
+
+<div align="center">
+
+<a href="https://github.com/hola-mundo999/prime-event-ticket-manager">
+  <img src="https://img.shields.io/badge/Prime%20Event%20Ticket%20Manager-black?style=for-the-badge&labelColor=1e1b4b&logo=github&logoColor=white" alt="Prime Event Ticket Manager">
+</a>
+<a href="https://prime-event-ticket-manager.vercel.app" target="_blank">
+  <img src="https://img.shields.io/badge/Live-black?style=for-the-badge&labelColor=0d1117&logo=vercel&logoColor=white" alt="Live Demo">
+</a>
+</div>
+
+**Prime Event Ticket Manager** — QR registration and ticket checks for Prime IT Club events.  
+`React, Node.js, MongoDB, QR Code`
+
+<br>
+
+<div align="center">
+
+<a href="https://github.com/hola-mundo999/tu-csit-notice-hub">
+  <img src="https://img.shields.io/badge/TU%20CSIT%20Notice%20Hub-black?style=for-the-badge&labelColor=1e1b4b&logo=github&logoColor=white" alt="TU CSIT Notice Hub">
+</a>
+<a href="https://tu-csit-notice-hub.vercel.app" target="_blank">
+  <img src="https://img.shields.io/badge/Live-black?style=for-the-badge&labelColor=0d1117&logo=vercel&logoColor=white" alt="Live Demo">
+</a>
+</div>
+
+**TU CSIT Notice Hub** — Checks official IOST notices, exam routines, and results automatically.  
+`Python, BeautifulSoup, Vercel`
+
+</div>
+
+---
 
 <!-- LIVE-DEPLOYMENTS:START -->
 <div align="center">
@@ -75,27 +153,37 @@ Recent builds, newest first. Each card opens the live site.
 
 ---
 
-### Selected projects
+### Contributions Dashboard
 
-**[TU CSIT Pulse](https://github.com/hola-mundo999/ai-csit-study-assistant)** · [Vercel app](https://ai-csit-study-assistant.vercel.app) · [Streamlit app](https://ai-csit-study-assistant.streamlit.app)<br>
-Semester notes and verified board exam solutions for TU BSc CSIT. Choose answers from Groq, Gemini, or ChatGPT.
-
-**[AI Gesture Controller](https://github.com/hola-mundo999/ai-gesture-controller-)** · [Web app](https://ai-gesture-controller-murex.vercel.app)<br>
-Browser-based hand tracking for media playback, volume, mute, track selection, and pointer controls. Camera frames stay in the browser.
-
-**[Prime Event Ticket Manager](https://github.com/hola-mundo999/prime-event-ticket-manager)** · [Live app](https://prime-event-ticket-manager.vercel.app) · [Admin repository](https://github.com/hola-mundo999/prime-ticket-admin)<br>
-QR registration and ticket checks for Prime IT Club events.
-
-**[TU CSIT Notice Hub](https://github.com/hola-mundo999/tu-csit-notice-hub)** · [Live dashboard](https://tu-csit-notice-hub.vercel.app)<br>
-Checks official IOST notices, exam routines, and results.
-
-Other projects: [NoteNest](https://github.com/hola-mundo999/note-app), [GitHub Finder](https://github.com/hola-mundo999/github-user-finder), [Result Announced](https://github.com/hola-mundo999/result-card-generator), [Paletto](https://github.com/hola-mundo999/random-color-palette), [PassForge](https://github.com/hola-mundo999/password-generator), and [Country Explorer](https://github.com/hola-mundo999/country-info-app).
+<div align="center">
+  <img src="./stats.svg" width="400" alt="GitHub contribution statistics" style="margin: 10px;">
+  <img src="./samyog-ascii.svg" width="400" alt="ASCII portrait" style="margin: 10px;">
+</div>
 
 ---
 
-### Tools
+### Contribution Heatmap
 
-**Languages:** Python, JavaScript, TypeScript, C, C++, SQL<br>
-**AI and computer vision:** OpenCV, MediaPipe, Groq, Gemini, OpenAI<br>
-**Web and backend:** FastAPI, Streamlit, React, Node.js, Tailwind CSS<br>
-**Tools:** Git, GitHub Actions, Vercel, Linux, VS Code
+<div align="center">
+  <img src="./contrib-heatmap.svg" width="90%" alt="GitHub contribution heatmap" style="margin: 20px;">
+</div>
+
+---
+
+### Contribution Snake
+
+<div align="center">
+  <img src="./snake.svg" width="90%" alt="Animated contribution snake" style="margin: 20px;">
+</div>
+
+<p align="center">
+  <sub>The green snake traces my contribution graph, updated automatically every 6 hours.</sub>
+</p>
+
+---
+
+### Footer
+
+<div align="center">
+  <img src="./assets/samyog-footer.svg" width="100%" alt="Open to collaboration, always shipping" />
+</div>

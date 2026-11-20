@@ -1,0 +1,31 @@
+name: Snake contributions
+
+on:
+  schedule:
+    # Every 6 hours, staggered 20 minutes after profile-art
+    - cron: "37 */6 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: snake-art
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Generate contribution snake
+        uses: Platane/snk@v3.4.0
+        with:
+          github_user: hola-mundo999
+          output_format: svg
+          out_svg: snake.svg
+
+      - name: Commit snake SVG
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: refresh contribution snake [skip ci]"
+          file_pattern: "snake.svg"
