@@ -1,15 +1,18 @@
-name: Daily Activity Heartbeat
+name: Daily Contribution Heartbeat
 
 on:
   schedule:
-    - cron: "47 */6 * * *"
+    - cron: "47 0 * * *"
+    - cron: "47 6 * * *"
+    - cron: "47 12 * * *"
+    - cron: "47 18 * * *"
   workflow_dispatch: {}
 
 permissions:
   contents: write
 
 concurrency:
-  group: daily-activity
+  group: daily-contribution-heartbeat
   cancel-in-progress: false
 
 jobs:
@@ -17,59 +20,79 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
-      - name: Check required email secret
-        env:
-          PROFILE_COMMIT_EMAIL: ${{ secrets.PROFILE_COMMIT_EMAIL }}
-        run: |
-          if [ -z "$PROFILE_COMMIT_EMAIL" ]; then
-            echo "::error::PROFILE_COMMIT_EMAIL secret is not configured"
-            exit 1
-          fi
-
-      - name: Checkout latest main
+      - name: Check out latest main
         uses: actions/checkout@v4
         with:
           ref: main
-          token: ${{ github.token }}
           fetch-depth: 0
 
-      - name: Check UTC date
-        id: check
-        run: |
-          today="$(date -u +%F)"
-          last="$(python3 -c "import json; print(json.load(open('data/daily-activity.json')).get('last_successful_utc_date',''))")"
-          echo "today=$today"
-          echo "last=$last"
-          if [ "$today" = "$last" ]; then
-            echo "skip=true" >> "$GITHUB_OUTPUT"
-          else
-            echo "skip=false" >> "$GITHUB_OUTPUT"
-          fi
-
-      - name: Update heartbeat date
-        if: steps.check.outputs.skip == 'false'
+      - name: Determine UTC six-hour slot and update state
+        id: slot
         run: |
           python3 - <<'PY'
-          import json, datetime
+          import datetime
+          import json
+          import os
+
+          now = datetime.datetime.now(datetime.timezone.utc)
+          date_key = now.strftime("%Y-%m-%d")
+
+          schedule = os.environ.get("SCHEDULE_CRON", "")
+          scheduled_slots = {
+              "47 0 * * *": "00",
+              "47 6 * * *": "06",
+              "47 12 * * *": "12",
+              "47 18 * * *": "18",
+          }
+
+          if schedule in scheduled_slots:
+              slot = scheduled_slots[schedule]
+          else:
+              slot = f"{(now.hour // 6) * 6:02d}"
+
           path = "data/daily-activity.json"
-          data = json.load(open(path, encoding="utf-8"))
-          data["last_successful_utc_date"] = datetime.datetime.now(datetime.timezone.utc).date().isoformat()
+          with open(path, encoding="utf-8") as f:
+              data = json.load(f)
+
+          completed = data.setdefault("completed_utc_slots", {})
+          day_slots = completed.setdefault(date_key, [])
+
+          if slot in day_slots:
+              print(f"UTC slot {date_key} {slot}:00 already committed; skip.")
+              with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as out:
+                  out.write("skip=true\n")
+              raise SystemExit(0)
+
+          day_slots.append(slot)
+          day_slots.sort()
+          data["last_successful_utc_date"] = date_key
+          data["last_successful_utc_slot"] = slot
+          data["purpose"] = "Four transparent scheduled profile-maintenance heartbeats per UTC day"
+
+          for old_date in sorted(completed)[:-14]:
+              del completed[old_date]
+
           with open(path, "w", encoding="utf-8") as f:
               json.dump(data, f, indent=2)
               f.write("\n")
-          PY
 
-      - name: Commit daily heartbeat
-        if: steps.check.outputs.skip == 'false'
+          with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as out:
+              out.write("skip=false\n")
+              out.write(f"date={date_key}\n")
+              out.write(f"slot={slot}\n")
+          PY
         env:
-          PROFILE_COMMIT_EMAIL: ${{ secrets.PROFILE_COMMIT_EMAIL }}
+          SCHEDULE_CRON: ${{ github.event.schedule }}
+
+      - name: Commit one heartbeat for this UTC slot
+        if: steps.slot.outputs.skip == 'false'
         run: |
           git config user.name "hola-mundo999"
-          git config user.email "$PROFILE_COMMIT_EMAIL"
+          git config user.email "296933633+hola-mundo999@users.noreply.github.com"
           git add data/daily-activity.json
-          git commit -m "chore(profile): automated daily activity heartbeat [skip ci]"
+          git commit -m "chore(profile): daily heartbeat ${{ steps.slot.outputs.date }} ${{ steps.slot.outputs.slot }} UTC [skip ci]"
           git push origin HEAD:main
 
-      - name: Report already updated
-        if: steps.check.outputs.skip == 'true'
-        run: echo "Today's UTC heartbeat already exists; no duplicate commit created."
+      - name: Report skipped duplicate slot
+        if: steps.slot.outputs.skip == 'true'
+        run: echo "This UTC six-hour slot already has a heartbeat; no duplicate commit created."

@@ -2,19 +2,13 @@
 
 <h1>Samyog Sapkota</h1>
 
-**Software Developer · Applied AI · Computer Vision · Interactive 3D**
+**Software Developer · Applied AI · Computer Vision · 3D Web**
 
 Kathmandu, Nepal · BSc CSIT, Prime College
 
 <a href="https://samyog-sapkota.com.np">Portfolio</a> &nbsp;·&nbsp;
 <a href="https://www.linkedin.com/in/samyogsapkota/">LinkedIn</a> &nbsp;·&nbsp;
 <a href="mailto:samyog.sapkota1@gmail.com">Email</a>
-
-<br>
-
-<a href="https://samyog-sapkota.com.np/snake-preview.html"><strong>↗ LAUNCH THE INTERACTIVE THREE.JS SNAKE LAB</strong></a>
-
-<sub>The 3D scene opens as a real WebGL experience on my portfolio site; GitHub README embeds cannot run an interactive Three.js canvas.</sub>
 
 </div>
 
@@ -32,7 +26,7 @@ I care about more than getting a demo to work: I like understanding the problem,
 
 ## Selected work
 
-These are screenshots of the real applications, captured from my portfolio—not decorative mock cards.
+These are screenshots of the real applications, not decorative mockups.
 
 <table>
 <tr>
@@ -45,7 +39,7 @@ A virtual fashion storefront with a 3D garment rail, product discovery and a sho
 
 **JavaScript · 3D assets · E-commerce**
 
-<a href="https://auvyren-virtual-store-sable.vercel.app">Live experience ↗</a> · <a href="https://github.com/hola-mundo999/auvyren-virtual-store">Source ↗</a>
+<a href="https://auvyren-virtual-store-sable.vercel.app">Live demo ↗</a> · <a href="https://github.com/hola-mundo999/auvyren-virtual-store">Source ↗</a>
 </td>
 <td width="50%" valign="top">
 <a href="https://ai-csit-study-assistant.vercel.app"><img src="./assets/showcase/csit-pulse.webp" width="100%" alt="CSIT Pulse study assistant screenshot"></a>
@@ -56,7 +50,7 @@ A TU BSc CSIT study desk with eight semesters, 66 subjects, 375 chapters, past q
 
 **JavaScript · Python · AI integration**
 
-<a href="https://ai-csit-study-assistant.vercel.app">Live experience ↗</a> · <a href="https://github.com/hola-mundo999/ai-csit-study-assistant">Source ↗</a>
+<a href="https://ai-csit-study-assistant.vercel.app">Live demo ↗</a> · <a href="https://github.com/hola-mundo999/ai-csit-study-assistant">Source ↗</a>
 </td>
 </tr>
 <tr>
@@ -69,7 +63,7 @@ A browser-based hand-tracking controller for media and pointer actions. Landmark
 
 **JavaScript · MediaPipe · Web Audio**
 
-<a href="https://ai-gesture-controller-murex.vercel.app">Live experience ↗</a> · <a href="https://github.com/hola-mundo999/ai-gesture-controller-">Source ↗</a>
+<a href="https://ai-gesture-controller-murex.vercel.app">Live demo ↗</a> · <a href="https://github.com/hola-mundo999/ai-gesture-controller-">Source ↗</a>
 </td>
 <td width="50%" valign="top">
 <a href="https://prime-event-ticket-manager.vercel.app"><img src="./assets/showcase/prime-ticket.webp" width="100%" alt="Prime Event Ticket Manager screenshot"></a>
@@ -80,7 +74,7 @@ Event registration and QR check-in built for Prime IT Club programmes, backed by
 
 **Python · FastAPI · SQLite/PostgreSQL · QR**
 
-<a href="https://prime-event-ticket-manager.vercel.app">Live experience ↗</a> · <a href="https://github.com/hola-mundo999/prime-event-ticket-manager">Source ↗</a>
+<a href="https://prime-event-ticket-manager.vercel.app">Live demo ↗</a> · <a href="https://github.com/hola-mundo999/prime-event-ticket-manager">Source ↗</a>
 </td>
 </tr>
 <tr>
@@ -97,7 +91,7 @@ Monitors official IOST notices, identifies routines and results, and organises u
 </td>
 <td width="50%" valign="top">
 
-### More things I’ve built
+### More projects
 
 - [3D Developer Portfolio](https://samyog-sapkota.com.np) — interactive portfolio and experiments.
 - [NoteNest](https://note-app-nu-two.vercel.app) — local-first Markdown notebook.
@@ -125,16 +119,19 @@ Monitors official IOST notices, identifies routines and results, and organises u
 <a href="https://github.com/"><img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Github-Dark.svg" width="46" height="46" alt="GitHub"></a>
 </div>
 
-## GitHub activity
+## 3D contribution calendar
 
 <div align="center">
+<img src="./profile-3d-contrib/profile-night-view.svg" width="100%" alt="Isometric 3D GitHub contribution calendar">
+<img src="./profile-3d-contrib/profile-gitblock.svg" width="100%" alt="Isometric GitHub contribution blocks">
+</div>
 
-<img src="./stats.svg" width="100%" alt="Contribution totals and streak statistics">
+## Contribution streak & snake
 
-<img src="./contrib-heatmap.svg" width="100%" alt="Contribution activity heatmap">
+<div align="center">
+<img src="https://streak-stats.demolab.com?user=hola-mundo999&theme=transparent&hide_border=true&ring=38BDF8&fire=60A5FA&currStreakLabel=93C5FD&sideLabels=9DB7D7&dates=7189A8&background=00000000" width="100%" alt="GitHub contribution streak">
 
-<a href="https://github.com/hola-mundo999/hola-mundo999/actions/workflows/snake.yml">Contribution snake automation ↗</a>
-
+<img src="./github-contribution-snake.gif" width="100%" alt="Animated GitHub contribution snake">
 </div>
 
 ---
