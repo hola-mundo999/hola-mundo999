@@ -1,7 +1,5 @@
 <div align="center">
 
-<img src="./assets/showcase/hero-ai-cyborg.webp" width="100%" alt="Cinematic cyborg artwork from my developer portfolio">
-
 <h1>Samyog Sapkota</h1>
 
 **Software Developer · Applied AI · Computer Vision · Interactive 3D**
@@ -14,7 +12,9 @@ Kathmandu, Nepal · BSc CSIT, Prime College
 
 <br>
 
-<a href="https://samyog-sapkota.com.np/snake-preview.html"><strong>↗ Launch the interactive Three.js snake lab</strong></a>
+<a href="https://samyog-sapkota.com.np/snake-preview.html"><strong>↗ LAUNCH THE INTERACTIVE THREE.JS SNAKE LAB</strong></a>
+
+<sub>The 3D scene opens as a real WebGL experience on my portfolio site; GitHub README embeds cannot run an interactive Three.js canvas.</sub>
 
 </div>
 
@@ -32,7 +32,7 @@ I care about more than getting a demo to work: I like understanding the problem,
 
 ## Selected work
 
-These are real application screenshots from my portfolio, not decorative mock project cards.
+These are screenshots of the real applications, captured from my portfolio—not decorative mock cards.
 
 <table>
 <tr>
@@ -43,7 +43,7 @@ These are real application screenshots from my portfolio, not decorative mock pr
 
 A virtual fashion storefront with a 3D garment rail, product discovery and a shopping flow.
 
-**JavaScript · Three.js assets · E-commerce**
+**JavaScript · 3D assets · E-commerce**
 
 <a href="https://auvyren-virtual-store-sable.vercel.app">Live experience ↗</a> · <a href="https://github.com/hola-mundo999/auvyren-virtual-store">Source ↗</a>
 </td>
