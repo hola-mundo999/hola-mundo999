@@ -1,189 +1,115 @@
 <div align="center">
 
-<img src="./assets/samyog-hero.svg" width="100%" alt="Samyog Sapkota - Software Developer & Applied AI" />
+<img src="./assets/samyog-hero.svg" alt="Samyog Sapkota — Software Developer and Applied AI" width="100%">
 
 <br>
 
-<p align="center">
-  Software Developer · Applied AI & Computer Vision · BSc CSIT @ Prime College, Kathmandu
-</p>
+<a href="https://samyog-sapkota.com.np"><img src="https://img.shields.io/badge/PORTFOLIO-0B1B33?style=for-the-badge&logo=vercel&logoColor=8CCAFF" alt="Portfolio"></a>
+<a href="https://www.linkedin.com/in/samyogsapkota"><img src="https://img.shields.io/badge/LINKEDIN-0B1B33?style=for-the-badge&logo=linkedin&logoColor=8CCAFF" alt="LinkedIn"></a>
+<a href="mailto:samyog.sapkota1@gmail.com"><img src="https://img.shields.io/badge/EMAIL-0B1B33?style=for-the-badge&logo=gmail&logoColor=8CCAFF" alt="Email"></a>
 
-<p align="center">
-  <a href="https://samyog-sapkota.com.np">Portfolio</a> ·
-  <a href="https://www.linkedin.com/in/samyogsapkota/">LinkedIn</a> ·
-  <a href="mailto:samyog.sapkota1@gmail.com">Email</a> ·
-  <a href="https://github.com/hola-mundo999">GitHub</a>
-</p>
+**I build practical software at the intersection of web development, automation and applied AI.**
 
 </div>
 
 ---
 
-### About
+## 01 / About
 
-I'm a BSc CSIT student at Prime College and Public Relations Director at Prime IT Club. I build academic tools, web applications, and computer vision projects. My current focus is applied AI, Python backends, and interactive systems.
+I'm a BSc CSIT student at **Prime College, Kathmandu**, interested in turning ideas into useful, working products. My work ranges from browser-based computer vision and AI-assisted study tools to full-stack applications, automation and interactive 3D experiences.
 
----
+I learn by building: understanding a problem, shipping a working version, testing the details and improving it.
 
-### Technologies I Build With
+- **Currently exploring:** applied AI, computer vision, full-stack engineering and 3D web experiences.
+- **Approach:** practical problem-solving, clear interfaces and systems that do what they promise.
+- **Beyond code:** Public Relations Director at Prime IT Club, connecting students, clubs and industry.
 
-<img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/python.svg" alt="Python" width="40" height="40" style="margin: 4px;">
-<img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/javascript.svg" alt="JavaScript" width="40" height="40" style="margin: 4px;">
-<img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/typescript.svg" alt="TypeScript" width="40" height="40" style="margin: 4px;">
-<img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/react.svg" alt="React" width="40" height="40" style="margin: 4px;">
-<img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/threejs.svg" alt="Three.js" width="40" height="40" style="margin: 4px;">
-<img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/tailwindcss.svg" alt="Tailwind CSS" width="40" height="40" style="margin: 4px;">
-<img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/fastapi.svg" alt="FastAPI" width="40" height="40" style="margin: 4px;">
-<img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/opencv.svg" alt="OpenCV" width="40" height="40" style="margin: 4px;">
-<img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/mediapipe.svg" alt="MediaPipe" width="40" height="40" style="margin: 4px;">
-<img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/github.svg" alt="GitHub" width="40" height="40" style="margin: 4px;">
-<img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/vercel.svg" alt="Vercel" width="40" height="40" style="margin: 4px;">
-<img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/postgresql.svg" alt="PostgreSQL" width="40" height="40" style="margin: 4px;">
-
----
-
-### Featured Projects
-
-<div align="center">
-
-<a href="https://github.com/hola-mundo999/ai-csit-study-assistant">
-  <img src="https://img.shields.io/badge/AI%20Study%20Assistant-black?style=for-the-badge&labelColor=1e1b4b&logo=github&logoColor=white" alt="TU CSIT Pulse AI Study Assistant">
-</a>
-<a href="https://ai-csit-study-assistant.vercel.app" target="_blank">
-  <img src="https://img.shields.io/badge/Live-black?style=for-the-badge&labelColor=0d1117&logo=vercel&logoColor=white" alt="Live Demo">
-</a>
-</div>
-
-**AI Study Assistant** — Semester notes and verified board exam solutions for TU BSc CSIT. Choose answers from Groq, Gemini, or ChatGPT.  
-`Python, FastAPI, LLM, Streamlit`
-
-<br>
-
-<div align="center">
-
-<a href="https://github.com/hola-mundo999/ai-gesture-controller-">
-  <img src="https://img.shields.io/badge/AI%20Gesture%20Controller-black?style=for-the-badge&labelColor=1e1b4b&logo=github&logoColor=white" alt="AI Gesture Controller">
-</a>
-<a href="https://ai-gesture-controller-murex.vercel.app" target="_blank">
-  <img src="https://img.shields.io/badge/Live-black?style=for-the-badge&labelColor=0d1117&logo=vercel&logoColor=white" alt="Live Demo">
-</a>
-</div>
-
-**AI Gesture Controller** — Browser-based hand tracking for media playback, volume, mute, track selection, and pointer controls. Camera frames stay in the browser.  
-`Python, MediaPipe, OpenCV, WebRTC`
-
-<br>
-
-<div align="center">
-
-<a href="https://github.com/hola-mundo999/prime-event-ticket-manager">
-  <img src="https://img.shields.io/badge/Prime%20Event%20Ticket%20Manager-black?style=for-the-badge&labelColor=1e1b4b&logo=github&logoColor=white" alt="Prime Event Ticket Manager">
-</a>
-<a href="https://prime-event-ticket-manager.vercel.app" target="_blank">
-  <img src="https://img.shields.io/badge/Live-black?style=for-the-badge&labelColor=0d1117&logo=vercel&logoColor=white" alt="Live Demo">
-</a>
-</div>
-
-**Prime Event Ticket Manager** — QR registration and ticket checks for Prime IT Club events.  
-`React, Node.js, MongoDB, QR Code`
-
-<br>
-
-<div align="center">
-
-<a href="https://github.com/hola-mundo999/tu-csit-notice-hub">
-  <img src="https://img.shields.io/badge/TU%20CSIT%20Notice%20Hub-black?style=for-the-badge&labelColor=1e1b4b&logo=github&logoColor=white" alt="TU CSIT Notice Hub">
-</a>
-<a href="https://tu-csit-notice-hub.vercel.app" target="_blank">
-  <img src="https://img.shields.io/badge/Live-black?style=for-the-badge&labelColor=0d1117&logo=vercel&logoColor=white" alt="Live Demo">
-</a>
-</div>
-
-**TU CSIT Notice Hub** — Checks official IOST notices, exam routines, and results automatically.  
-`Python, BeautifulSoup, Vercel`
-
-</div>
-
----
-
-<!-- LIVE-DEPLOYMENTS:START -->
-<div align="center">
-
-<img src="./assets/deploy-ticker.svg" width="100%" alt="Newest live deployments, auto-refreshed" />
+## 02 / Selected work
 
 <table>
-  <tr>
-    <td align="center" width="50%">
-      <a href="https://auvyren-virtual-store-sable.vercel.app"><img src="./assets/projects/auvyren.svg" width="440" alt="AUVYREN: live at auvyren-virtual-store-sable.vercel.app" /></a>
-    </td>
-    <td align="center" width="50%">
-      <a href="https://samyog-sapkota.com.np"><img src="./assets/projects/3d-developer-portfolio.svg" width="440" alt="3D Developer Portfolio: live at samyog-sapkota.com.np" /></a>
-    </td>
-  </tr>
-  <tr>
-    <td align="center" width="50%">
-      <a href="https://note-app-nu-two.vercel.app"><img src="./assets/projects/notenest.svg" width="440" alt="NoteNest: live at note-app-nu-two.vercel.app" /></a>
-    </td>
-    <td align="center" width="50%">
-      <a href="https://github-user-finder-jade-alpha.vercel.app"><img src="./assets/projects/github-finder.svg" width="440" alt="GitHub Finder: live at github-user-finder-jade-alpha.vercel.app" /></a>
-    </td>
-  </tr>
-  <tr>
-    <td align="center" width="50%">
-      <a href="https://result-card-generator-red.vercel.app"><img src="./assets/projects/result-announced.svg" width="440" alt="Result Announced: live at result-card-generator-red.vercel.app" /></a>
-    </td>
-    <td align="center" width="50%">
-      <a href="https://random-color-palette-snowy.vercel.app"><img src="./assets/projects/paletto.svg" width="440" alt="Paletto: live at random-color-palette-snowy.vercel.app" /></a>
-    </td>
-  </tr>
-  <tr>
-    <td align="center" width="50%">
-      <a href="https://password-generator-delta-liard.vercel.app"><img src="./assets/projects/passforge.svg" width="440" alt="PassForge: live at password-generator-delta-liard.vercel.app" /></a>
-    </td>
-    <td align="center" width="50%">
-      <a href="https://country-info-explorer-phi.vercel.app"><img src="./assets/projects/country-explorer.svg" width="440" alt="Country Explorer: live at country-info-explorer-phi.vercel.app" /></a>
-    </td>
-  </tr>
+<tr>
+<td width="50%" valign="top">
+<a href="https://auvyren-virtual-store-sable.vercel.app"><img src="./assets/project-auvyren.svg" width="100%" alt="Auvyren virtual store artwork"></a>
+**[AUVYREN — 3D Virtual Store](https://auvyren-virtual-store-sable.vercel.app)**
+
+A virtual storefront with a 3D garment rail, product discovery and shopping flow.
+
+<sub>JavaScript · 3D assets · E-commerce UI</sub>
+</td>
+<td width="50%" valign="top">
+<a href="https://github.com/hola-mundo999/ai-csit-study-assistant"><img src="./assets/project-csit-pulse.svg" width="100%" alt="CSIT Pulse artwork"></a>
+**[CSIT Pulse — AI Study Assistant](https://github.com/hola-mundo999/ai-csit-study-assistant)**
+
+A TU BSc CSIT study desk covering eight semesters, 66 subjects, 375 chapters, past questions and an AI tutor.
+
+<sub>JavaScript · Python · AI integration</sub>
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+<a href="https://github.com/hola-mundo999/ai-gesture-controller-"><img src="./assets/project-gesture.svg" width="100%" alt="Gesture Controller artwork"></a>
+**[AI Gesture Controller](https://github.com/hola-mundo999/ai-gesture-controller-)**
+
+Browser-based hand tracking that maps five gestures to media and pointer controls, with on-device inference.
+
+<sub>JavaScript · MediaPipe · Web Audio</sub>
+</td>
+<td width="50%" valign="top">
+<a href="https://github.com/hola-mundo999/prime-event-ticket-manager"><img src="./assets/project-ticket.svg" width="100%" alt="Ticket Manager artwork"></a>
+**[Prime Event Ticket Manager](https://github.com/hola-mundo999/prime-event-ticket-manager)**
+
+Event registration and QR check-in system built for Prime IT Club programmes, with a FastAPI backend and admin console.
+
+<sub>Python · FastAPI · SQLite/PostgreSQL</sub>
+</td>
+</tr>
 </table>
 
-<sub><code>8 live builds</code> · every card opens the deployed site · auto-synced from Vercel</sub>
+<details>
+<summary><strong>More experiments & small builds</strong></summary>
 
-</div>
-<!-- LIVE-DEPLOYMENTS:END -->
+- [3D Developer Portfolio](https://samyog-sapkota.com.np) — interactive personal portfolio.
+- [TU CSIT Notice Hub](https://github.com/hola-mundo999/tu-csit-notice-hub) — academic notice scraping, categorisation and alerts.
+- [NoteNest](https://note-app-nu-two.vercel.app) — local-first Markdown notebook.
+- [GitHub Finder](https://github-user-finder-jade-alpha.vercel.app) — GitHub profile lookup.
+- [Result Announced](https://result-card-generator-red.vercel.app) — printable TU result cards.
+- [Paletto](https://random-color-palette-snowy.vercel.app) — colour palette generator.
+- [PassForge](https://password-generator-delta-liard.vercel.app) — Web Crypto password generator.
+- [Country Explorer](https://country-info-explorer-phi.vercel.app) — country information explorer.
 
----
+</details>
 
-### Contributions Dashboard
-
-<div align="center">
-  <img src="./stats.svg" width="400" alt="GitHub contribution statistics" style="margin: 10px;">
-  <img src="./samyog-ascii.svg" width="400" alt="ASCII portrait" style="margin: 10px;">
-</div>
-
----
-
-### Contribution Heatmap
+## 03 / Tools I work with
 
 <div align="center">
-  <img src="./contrib-heatmap.svg" width="90%" alt="GitHub contribution heatmap" style="margin: 20px;">
+<img src="https://skillicons.dev/icons?i=python,javascript,typescript,react,threejs,tailwind,fastapi,opencv,postgres,sqlite,supabase,html,css,git,github,vercel&perline=8" alt="Technology icons">
 </div>
 
----
+<sub>Tools used across my projects; this is not a claim of equal proficiency in every technology.</sub>
 
-### Contribution Snake
+## 04 / GitHub activity
 
 <div align="center">
-  <img src="./snake.svg" width="90%" alt="Animated contribution snake" style="margin: 20px;">
+
+<a href="https://github.com/hola-mundo999"><img src="./stats.svg" width="49%" alt="Contribution statistics and streak"></a>
+<a href="https://github.com/hola-mundo999"><img src="./contrib-heatmap.svg" width="49%" alt="Contribution heatmap"></a>
+
+<img src="./snake.svg" width="100%" alt="Animated contribution snake">
+
+<sub>Activity artwork refreshes automatically. GitHub's native contribution calendar remains the source of truth.</sub>
+
 </div>
 
-<p align="center">
-  <sub>The green snake traces my contribution graph, updated automatically every 6 hours.</sub>
-</p>
+## 05 / Connect
 
----
-
-### Footer
+I'm open to collaborating on practical software, AI-powered tools and interesting web projects.
 
 <div align="center">
-  <img src="./assets/samyog-footer.svg" width="100%" alt="Open to collaboration, always shipping" />
+
+<a href="https://samyog-sapkota.com.np"><strong>Portfolio</strong></a> ·
+<a href="https://www.linkedin.com/in/samyogsapkota"><strong>LinkedIn</strong></a> ·
+<a href="mailto:samyog.sapkota1@gmail.com"><strong>Email</strong></a>
+
+<sub>Built with curiosity · Kathmandu, Nepal</sub>
+
 </div>
