@@ -119,20 +119,22 @@ Monitors official IOST notices, identifies routines and results, and organises u
 <a href="https://github.com/"><img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Github-Dark.svg" width="46" height="46" alt="GitHub"></a>
 </div>
 
-## 3D contribution calendar
+## Contribution activity
 
 <div align="center">
-<img src="./profile-3d-contrib/profile-night-view.svg" width="100%" alt="Isometric 3D GitHub contribution calendar">
-<img src="./profile-3d-contrib/profile-gitblock.svg" width="100%" alt="Isometric GitHub contribution blocks">
+
+<img src="./github-contribution-snake.gif" width="100%" alt="Animated snake moving across my GitHub contribution calendar">
+
 </div>
 
-## Contribution streak & snake
+The snake animation is regenerated automatically from my GitHub contribution calendar.
 
-<div align="center">
-<img src="https://streak-stats.demolab.com?user=hola-mundo999&theme=transparent&hide_border=true&ring=38BDF8&fire=60A5FA&currStreakLabel=93C5FD&sideLabels=9DB7D7&dates=7189A8&background=00000000" width="100%" alt="GitHub contribution streak">
+## Open-source projects
 
-<img src="./github-contribution-snake.gif" width="100%" alt="Animated GitHub contribution snake">
-</div>
+<!-- PROJECTS:START -->
+<!-- PROJECTS:END -->
+
+_Project list refreshes automatically from my public GitHub repositories._
 
 ---
 
