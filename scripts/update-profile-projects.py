@@ -27,6 +27,15 @@ DISPLAY_NAMES = {
     "result-card-generator": "Result Announced",
     "tu-csit-notice-hub": "TU CSIT Notice Hub",
 }
+DISPLAY_DESCRIPTIONS = {
+    "country-info-app": "Explore country profiles, geographic data and key facts.",
+    "github-user-finder": "Search GitHub users and explore their public profiles.",
+    "note-app": "A minimalist Markdown notebook for notes and study.",
+    "password-generator": "Generate secure passwords with a cryptographic strength meter.",
+    "random-color-palette": "Generate harmonious colour palettes with contrast checks.",
+    "result-card-generator": "Generate printable TU examination result cards.",
+    "tu-csit-notice-hub": "Tracks official IOST notices, routines and results for TU CSIT students.",
+}
 
 
 def fetch_repositories():
@@ -86,7 +95,9 @@ def main():
             slug = repo.get("name", "Repository").lower()
             display_name = DISPLAY_NAMES.get(slug, repo.get("name", "Repository").replace("-", " ").title())
             name = clean(display_name, 80)
-            description_text = repo.get("description") or "Personal project."
+            description_text = DISPLAY_DESCRIPTIONS.get(
+                slug, repo.get("description") or "A project by Samyog."
+            )
             description_text = re.sub(
                 r"\s+by Samyog Sapkota\s*$", "", description_text.strip(), flags=re.IGNORECASE
             )
