@@ -1,0 +1,48 @@
+name: Deploy Contribution Explorer
+
+on:
+  schedule:
+    - cron: "57 */6 * * *"
+  workflow_dispatch: {}
+  push:
+    branches: [main]
+    paths:
+      - 'contribution-explorer/**'
+      - '.github/workflows/pages-deploy.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: pages-deploy
+  cancel-in-progress: false
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install Python dependencies
+        run: pip install -r scripts/requirements.txt
+
+      - name: Fetch contribution data
+        run: python scripts/fetch_contributions.py
+        env:
+          GH_PROFILE_USER: "hola-mundo999"
+
+      - name: Prepare contribution data for explorer
+        run: |
+          mkdir -p contribution-explorer/data
+          python3 -c "import json; d=json.load(open('data/contributions.json')); json.dump(d['days'], open('contribution-explorer/data/contributions.json', 'w'), indent=2)"
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./contribution-explorer
+          cname: contributions.hola-mundo999.github.io
