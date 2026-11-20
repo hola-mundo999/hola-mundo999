@@ -1,4 +1,6 @@
 {
-  "last_successful_utc_date": "2026-11-20",
-  "purpose": "Automated daily profile maintenance heartbeat"
+  "last_successful_utc_date": "",
+  "last_successful_utc_slot": "",
+  "completed_utc_slots": {},
+  "purpose": "Four transparent scheduled profile-maintenance heartbeats per UTC day"
 }

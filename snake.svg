@@ -1,6 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="840" height="246" viewBox="0 0 840 246" role="img" aria-labelledby="title desc">
-  <title id="title">Contribution Snake</title>
-  <desc id="desc">Animated contribution snake following my GitHub contribution graph</desc>
-  <rect width="840" height="246" fill="#0d1117"/>
-  <text x="420" y="123" fill="#475569" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" text-anchor="middle">Contribution snake - refresh to generate</text>
-</svg>
