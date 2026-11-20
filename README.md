@@ -91,12 +91,11 @@ Event registration and QR check-in system built for Prime IT Club programmes, wi
 
 <div align="center">
 
-<a href="https://github.com/hola-mundo999"><img src="./stats.svg" width="49%" alt="Contribution statistics and streak"></a>
-<a href="https://github.com/hola-mundo999"><img src="./contrib-heatmap.svg" width="49%" alt="Contribution heatmap"></a>
+<a href="https://github.com/hola-mundo999"><img src="https://streak-stats.demolab.com?user=hola-mundo999&theme=transparent&hide_border=true&ring=38BDF8&fire=60A5FA&currStreakLabel=93C5FD&sideLabels=9DB7D7&dates=7189A8&background=00000000" width="100%" alt="GitHub contribution streak"></a>
 
 <img src="./snake.svg" width="100%" alt="Animated contribution snake">
 
-<sub>Activity artwork refreshes automatically. GitHub's native contribution calendar remains the source of truth.</sub>
+<sub>Streak card and snake are generated from GitHub activity. GitHub's native contribution calendar below this README is the source of truth for the full contribution graph.</sub>
 
 </div>
 
