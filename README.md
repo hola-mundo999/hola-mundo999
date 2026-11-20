@@ -94,15 +94,15 @@ Event registration and QR check-in for Prime IT Club programmes.
 
 <!-- PROJECTS:START -->
 <table>
-<thead><tr><th>Repository</th><th>About</th><th>Language</th><th>Stars</th></tr></thead>
+<thead><tr><th>Project</th><th>About</th><th>Language</th><th>Demo</th></tr></thead>
 <tbody>
-<tr><td><a href="https://github.com/hola-mundo999/country-info-app"><strong>country-info-app</strong></a></td><td>Country Explorer &amp; Geographic Intelligence Web App by Samyog Sapkota</td><td>CSS</td><td>★ 1</td></tr>
-<tr><td><a href="https://github.com/hola-mundo999/github-user-finder"><strong>github-user-finder</strong></a></td><td>GitHub User Explorer &amp; Profile Analytics Web App by Samyog Sapkota</td><td>CSS</td><td>★ 1</td></tr>
-<tr><td><a href="https://github.com/hola-mundo999/note-app"><strong>note-app</strong></a></td><td>NoteNest — Minimalist Markdown Notebook &amp; Study App by Samyog Sapkota</td><td>JavaScript</td><td>★ 1</td></tr>
-<tr><td><a href="https://github.com/hola-mundo999/password-generator"><strong>password-generator</strong></a></td><td>PassForge — Cryptographic Password Generator &amp; Security Strength Meter by Samyog Sapkota</td><td>JavaScript</td><td>★ 1</td></tr>
-<tr><td><a href="https://github.com/hola-mundo999/random-color-palette"><strong>random-color-palette</strong></a></td><td>Paletto — Instant Harmonic Color Palette &amp; Contrast Generator by Samyog Sapkota</td><td>CSS</td><td>★ 1</td></tr>
-<tr><td><a href="https://github.com/hola-mundo999/tu-csit-notice-hub"><strong>tu-csit-notice-hub</strong></a></td><td>Personal project by Samyog.</td><td>Python</td><td>★ 1</td></tr>
-<tr><td><a href="https://github.com/hola-mundo999/result-card-generator"><strong>result-card-generator</strong></a></td><td>Tribhuvan University Examination Board Result Card Generator by Samyog Sapkota</td><td>CSS</td><td>★ 1</td></tr>
+<tr><td><a href="https://github.com/hola-mundo999/country-info-app"><strong>Country Explorer</strong></a></td><td>Country Explorer &amp; Geographic Intelligence Web App</td><td>CSS</td><td><a href="https://country-info-explorer-phi.vercel.app">Live ↗</a></td></tr>
+<tr><td><a href="https://github.com/hola-mundo999/github-user-finder"><strong>GitHub Finder</strong></a></td><td>GitHub User Explorer &amp; Profile Analytics Web App</td><td>CSS</td><td><a href="https://github-user-finder-jade-alpha.vercel.app">Live ↗</a></td></tr>
+<tr><td><a href="https://github.com/hola-mundo999/note-app"><strong>NoteNest</strong></a></td><td>NoteNest — Minimalist Markdown Notebook &amp; Study App</td><td>JavaScript</td><td><a href="https://note-app-nu-two.vercel.app">Live ↗</a></td></tr>
+<tr><td><a href="https://github.com/hola-mundo999/password-generator"><strong>PassForge</strong></a></td><td>PassForge — Cryptographic Password Generator &amp; Security Strength Meter</td><td>JavaScript</td><td><a href="https://password-generator-delta-liard.vercel.app">Live ↗</a></td></tr>
+<tr><td><a href="https://github.com/hola-mundo999/random-color-palette"><strong>Paletto</strong></a></td><td>Paletto — Instant Harmonic Color Palette &amp; Contrast Generator</td><td>CSS</td><td><a href="https://random-color-palette-snowy.vercel.app">Live ↗</a></td></tr>
+<tr><td><a href="https://github.com/hola-mundo999/tu-csit-notice-hub"><strong>TU CSIT Notice Hub</strong></a></td><td>Personal project.</td><td>Python</td><td><a href="https://tu-csit-notice-hub.vercel.app">Live ↗</a></td></tr>
+<tr><td><a href="https://github.com/hola-mundo999/result-card-generator"><strong>Result Announced</strong></a></td><td>Tribhuvan University Examination Board Result Card Generator</td><td>CSS</td><td><a href="https://result-card-generator-red.vercel.app">Live ↗</a></td></tr>
 </tbody>
 </table>
 <!-- PROJECTS:END -->
