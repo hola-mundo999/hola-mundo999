@@ -31,7 +31,7 @@ CSIT student building practical applications with AI, computer vision and web te
 
 **JavaScript · Three.js · E-commerce**
 
-<a href="https://auvyren-virtual-store-sable.vercel.app">Live demo ↗</a> · <a href="https://github.com/hola-mundo999/auvyren-virtual-store">Source ↗</a>
+<a href="https://auvyren-virtual-store-sable.vercel.app">Live demo ↗</a>
 </td>
 <td width="50%" valign="top">
 <a href="https://ai-csit-study-assistant.vercel.app"><img src="./assets/showcase/csit-pulse.webp" width="100%" alt="CSIT Pulse study assistant"></a>
