@@ -1,0 +1,35 @@
+name: Refresh public projects in profile
+
+on:
+  schedule:
+    - cron: "9 */6 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-project-sync
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - name: Update public repository list
+        run: python3 scripts/update-profile-projects.py
+      - name: Commit only when the generated list changes
+        run: |
+          if git diff --quiet -- README.md; then
+            echo "Project list is already current."
+            exit 0
+          fi
+          git config user.name "hola-mundo999"
+          git config user.email "296933633+hola-mundo999@users.noreply.github.com"
+          git add README.md
+          git commit -m "chore(profile): refresh public project list [skip ci]"
+          git push origin HEAD:main
