@@ -1,12 +1,8 @@
 name: Daily Activity Heartbeat
 
-# Maintains GitHub contribution streak with one qualifying commit per UTC calendar day.
-# Runs 4x daily but only creates one heartbeat commit per day.
-# The commit is attributed to the profile owner's verified email.
-
 on:
   schedule:
-    - cron: "47 */6 * * *"   # 00:47, 06:47, 12:47, 18:47 UTC
+    - cron: "47 */6 * * *"
   workflow_dispatch: {}
 
 permissions:
@@ -16,95 +12,64 @@ concurrency:
   group: daily-activity
   cancel-in-progress: false
 
-env:
-  PROFILE_COMMIT_NAME: "hola-mundo999"
-
 jobs:
   heartbeat:
     runs-on: ubuntu-latest
+    timeout-minutes: 5
     steps:
-      - name: Check for missing email secret
+      - name: Check required email secret
+        env:
+          PROFILE_COMMIT_EMAIL: ${{ secrets.PROFILE_COMMIT_EMAIL }}
         run: |
-          if [ -z "${{ secrets.PROFILE_COMMIT_EMAIL }}" ]; then
+          if [ -z "$PROFILE_COMMIT_EMAIL" ]; then
             echo "::error::PROFILE_COMMIT_EMAIL secret is not configured"
-            echo "Add your verified GitHub noreply email at: Settings -> Emails -> 'Add email to Git'"
             exit 1
           fi
-        shell: bash
 
-      - name: Fetch latest main
+      - name: Checkout latest main
         uses: actions/checkout@v4
         with:
           ref: main
           token: ${{ github.token }}
+          fetch-depth: 0
 
-      - name: Check if heartbeat needed for today
+      - name: Check UTC date
         id: check
         run: |
-          TODAY=$(date -u +%Y-%m-%d)
-
-          if [ -f data/daily-activity.json ]; then
-            LAST_SUCCESS=$(python3 -c "import json; print(json.load(open('data/daily-activity.json'))['last_successful_utc_date'])")
+          today="$(date -u +%F)"
+          last="$(python3 -c "import json; print(json.load(open('data/daily-activity.json')).get('last_successful_utc_date',''))")"
+          echo "today=$today"
+          echo "last=$last"
+          if [ "$today" = "$last" ]; then
+            echo "skip=true" >> "$GITHUB_OUTPUT"
           else
-            LAST_SUCCESS=""
+            echo "skip=false" >> "$GITHUB_OUTPUT"
           fi
 
-          echo "Today: $TODAY"
-          echo "Last successful: $LAST_SUCCESS"
-
-          if [ "$LAST_SUCCESS" = "$TODAY" ]; then
-            echo "skip=true" >> $GITHUB_OUTPUT
-            echo "action=skipped" >> $GITHUB_OUTPUT
-          else
-            echo "skip=false" >> $GITHUB_OUTPUT
-            echo "action=proceeding" >> $GITHUB_OUTPUT
-          fi
-
-      - name: Update heartbeat file
+      - name: Update heartbeat date
         if: steps.check.outputs.skip == 'false'
         run: |
-          TODAY=$(date -u +%Y-%m-%d)
-          mkdir -p data
-          cat > data/daily-activity.json << EOF
-          {
-            "last_successful_utc_date": "$TODAY",
-            "purpose": "Automated daily profile maintenance heartbeat"
-          }
-          EOF
-          echo "Updated daily-activity.json to $TODAY"
+          python3 - <<'PY'
+          import json, datetime
+          path = "data/daily-activity.json"
+          data = json.load(open(path, encoding="utf-8"))
+          data["last_successful_utc_date"] = datetime.datetime.now(datetime.timezone.utc).date().isoformat()
+          with open(path, "w", encoding="utf-8") as f:
+              json.dump(data, f, indent=2)
+              f.write("\n")
+          PY
 
-      - name: Validate JSON
+      - name: Commit daily heartbeat
         if: steps.check.outputs.skip == 'false'
+        env:
+          PROFILE_COMMIT_EMAIL: ${{ secrets.PROFILE_COMMIT_EMAIL }}
         run: |
-          python3 -c "import json; json.load(open('data/daily-activity.json'))"
-          echo "JSON validation passed"
-
-      - name: Configure Git identity
-        if: steps.check.outputs.skip == 'false'
-        run: |
-          git config user.name "${{ env.PROFILE_COMMIT_NAME }}"
-          git config user.email "${{ secrets.PROFILE_COMMIT_EMAIL }}"
-
-      - name: Commit heartbeat
-        if: steps.check.outputs.skip == 'false'
-        run: |
+          git config user.name "hola-mundo999"
+          git config user.email "$PROFILE_COMMIT_EMAIL"
           git add data/daily-activity.json
           git commit -m "chore(profile): automated daily activity heartbeat [skip ci]"
+          git push origin HEAD:main
 
-      - name: Push heartbeat commit
-        if: steps.check.outputs.skip == 'false'
-        run: |
-          git push origin main
-
-      - name: Report result
-        if: steps.check.outputs.skip == 'false'
-        run: |
-          echo "Successfully created daily heartbeat commit"
-          TODAY=$(date -u +%Y-%m-%d)
-          echo "Heartbeat date: $TODAY"
-
-      - name: Already has today's heartbeat
+      - name: Report already updated
         if: steps.check.outputs.skip == 'true'
-        run: |
-          echo "Already have a daily heartbeat for today - skipping commit"
-          echo "This is expected behavior for scheduled runs that find existing heartbeat"
+        run: echo "Today's UTC heartbeat already exists; no duplicate commit created."
