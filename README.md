@@ -90,6 +90,10 @@ Event registration and QR check-in for Prime IT Club programmes.
 <img src="./github-contribution-snake.gif" width="100%" alt="Animated snake moving across my GitHub contribution calendar">
 </div>
 
+## Interactive 3D Explorer
+
+<a href="https://hola-mundo999.github.io/hola-mundo999/">Explore my 3D projects online</a>
+
 ## Other public repositories
 
 <!-- PROJECTS:START -->
