@@ -2,7 +2,7 @@
 
 <h1>Samyog Sapkota</h1>
 
-<strong>CSIT Student · AI & Computer Vision · Web Development</strong>
+<strong>CSIT Student · Software Development · AI & Computer Vision</strong>
 
 Kathmandu, Nepal · Prime College
 
@@ -14,11 +14,9 @@ Kathmandu, Nepal · Prime College
 
 ---
 
-## About
+Building practical applications with AI-powered web experiences.
 
-CSIT student building practical applications with AI, computer vision and web technologies. Public Relations Director at Prime IT Club.
-
-## Featured projects
+## Selected Projects
 
 <table>
 <tr>
@@ -38,7 +36,7 @@ CSIT student building practical applications with AI, computer vision and web te
 
 ### CSIT Pulse · AI Study Assistant
 
-Study platform for TU BSc CSIT subjects, chapters and past questions, with an AI tutor.
+Study platform for TU BSc CSIT subjects with an AI tutor.
 
 **JavaScript · Python · AI**
 
@@ -62,39 +60,45 @@ Browser-based hand tracking for media and pointer control.
 
 ### Prime Event Ticket Manager
 
-Event registration and QR check-in for Prime IT Club programmes.
+Event registration and QR check-in for club programmes.
 
 **Python · FastAPI · SQLite/PostgreSQL**
 
 <a href="https://prime-event-ticket-manager.vercel.app">Live demo ↗</a> · <a href="https://github.com/hola-mundo999/prime-event-ticket-manager">Source ↗</a>
 </td>
 </tr>
+<tr>
+<td colspan="2" width="100%" valign="top">
+<a href="https://tu-csit-notice-hub.vercel.app"><img src="./assets/showcase/notice-hub.webp" width="100%" alt="TU CSIT Notice Hub"></a>
+
+### TU CSIT Notice Hub
+
+Tracks official IOST notices, routines and results for TU CSIT students.
+
+**Python · FastAPI**
+
+<a href="https://tu-csit-notice-hub.vercel.app">Live demo ↗</a> · <a href="https://github.com/hola-mundo999/tu-csit-notice-hub">Source ↗</a>
+</td>
+</tr>
 </table>
 
-## Tech stack
+## Tech Stack
+
+**Languages**: Python · JavaScript · CSS
+
+**Frameworks**: React · FastAPI · Three.js
+
+**AI/ML**: OpenCV · MediaPipe
+
+**Infrastructure**: PostgreSQL · Supabase · GitHub Pages
+
+## GitHub Activity
 
 <div align="center">
-<a href="https://www.python.org/"><img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Python-Dark.svg" width="42" height="42" alt="Python"></a>
-<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"><img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/JavaScript.svg" width="42" height="42" alt="JavaScript"></a>
-<a href="https://react.dev/"><img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/React-Dark.svg" width="42" height="42" alt="React"></a>
-<a href="https://threejs.org/"><img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/ThreeJS-Dark.svg" width="42" height="42" alt="Three.js"></a>
-<a href="https://fastapi.tiangolo.com/"><img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/FastAPI.svg" width="42" height="42" alt="FastAPI"></a>
-<a href="https://opencv.org/"><img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/OpenCV-Dark.svg" width="42" height="42" alt="OpenCV"></a>
-<a href="https://www.postgresql.org/"><img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/PostgreSQL-Dark.svg" width="42" height="42" alt="PostgreSQL"></a>
-<a href="https://supabase.com/"><img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Supabase-Dark.svg" width="42" height="42" alt="Supabase"></a>
+<img src="./contrib-heatmap.svg" width="100%" alt="Contribution heatmap">
 </div>
 
-## Contribution activity
-
-<div align="center">
-<img src="./github-contribution-snake.gif" width="100%" alt="Animated snake moving across my GitHub contribution calendar">
-</div>
-
-## Interactive 3D Explorer
-
-<a href="https://hola-mundo999.github.io/hola-mundo999/">Explore my 3D projects online</a>
-
-## Other public repositories
+## Other Public Repositories
 
 <!-- PROJECTS:START -->
 <table>
