@@ -8,7 +8,7 @@ Kathmandu, Nepal · Prime College
 
 <a href="https://samyog-sapkota.com.np">Portfolio</a> &nbsp;·&nbsp;
 <a href="https://www.linkedin.com/in/samyogsapkota/">LinkedIn</a> &nbsp;·&nbsp;
-<a href="mailto:samyog.sapkota1@gmail.com">Email</a>
+<a href="https://mail.google.com/mail/u/0/?fs=1&to=samyog.sapkota1@gmail.com&su=Hello+Samyog+-+Let%27s+Connect&body=Hi+Samyog,%0A%0AI+came+across+your+GitHub+profile+and+would+like+to+get+in+touch+regarding:%0A%5BWrite+your+message+here%5D%0A%0AGitHub+repository+or+project+(optional):%0A%0AName:%0AOrganization+(optional):%0A%0ABest+regards,%0A%5BYour+Name%5D&tf=cm">Email</a>
 
 </div>
 
@@ -122,5 +122,5 @@ Tracks official IOST notices, routines and results for TU CSIT students.
 <div align="center">
 <a href="https://samyog-sapkota.com.np">Portfolio</a> &nbsp;·&nbsp;
 <a href="https://www.linkedin.com/in/samyogsapkota/">LinkedIn</a> &nbsp;·&nbsp;
-<a href="mailto:samyog.sapkota1@gmail.com">Email</a>
+<a href="https://mail.google.com/mail/u/0/?fs=1&to=samyog.sapkota1@gmail.com&su=Hello+Samyog+-+Let%27s+Connect&body=Hi+Samyog,%0A%0AI+came+across+your+GitHub+profile+and+would+like+to+get+in+touch+regarding:%0A%5BWrite+your+message+here%5D%0A%0AGitHub+repository+or+project+(optional):%0A%0AName:%0AOrganization+(optional):%0A%0ABest+regards,%0A%5BYour+Name%5D&tf=cm">Email</a>
 </div>
